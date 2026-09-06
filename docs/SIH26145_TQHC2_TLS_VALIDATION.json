@@ -1,0 +1,51 @@
+{
+  "dataset": "TQH-C2",
+  "version": "1.0.0",
+  "source": "TQH-C2 A_i30_j0 labeled.jsonl",
+  "profile": "A",
+  "encryption": "TLS",
+  "evaluation": {
+    "rows_total_tls_observable": 5320,
+    "malicious_c2_tls_rows": 2400,
+    "benign_tls_rows": 2920,
+    "tp": 0,
+    "fn": 2400,
+    "fp": 0,
+    "tn": 2920,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "false_positive_rate": 0.0,
+    "malicious_detection_rate_over_tls_rows": 0.0
+  },
+  "detector": {
+    "window_seconds": 60.0,
+    "minimum_events": 3,
+    "score_threshold": 70.0,
+    "minimum_supporting_signals": 3,
+    "payload_decryption": false,
+    "ja4_standalone_trigger": false
+  },
+  "coverage_note": "Only rows containing TLS metadata were evaluated. malicious_c2 rows without TLS metadata were excluded because the TLS metadata detector cannot observe them.",
+  "examples": {
+    "malicious_triggered": [],
+    "benign_triggered": []
+  },
+  "integration_validation": {
+    "status": "PASS",
+    "engine": "NetraStreamEngine.process_tls",
+    "detector": "TLSC2BeaconEngine",
+    "malicious_bot_c2_alerts": 2280,
+    "benign_bot_c2_alerts": 1,
+    "malformed_alerts": 0,
+    "payload_decryption": false,
+    "standard_alert_schema": true,
+    "example_alert": {
+      "threat_class": "BOT_C2",
+      "severity": "HIGH",
+      "confidence": 89.99,
+      "beacon_interval_seconds": 30.0024,
+      "coefficient_of_variation": 0.0
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "model_version": "DNS_TUNNEL_V2",
+  "threshold": 0.96,
+  "test_rows": 620696,
+  "tunnel_precision": 0.12329606371572982,
+  "tunnel_recall": 0.5186855670103093,
+  "tunnel_f1": 0.19923276822175473,
+  "tunnel_f0_5": 0.14547491687147607,
+  "confusion_matrix": [
+    [
+      613420,
+      5724
+    ],
+    [
+      747,
+      805
+    ]
+  ],
+  "evaluation_seconds": 51.16512181400003,
+  "evaluation_domains_per_second": 12131.232722486402
+}

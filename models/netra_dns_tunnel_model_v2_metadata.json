@@ -1,0 +1,42 @@
+{
+  "model_version": "DNS_TUNNEL_V2",
+  "model": "Binary Logistic Regression + character TF-IDF + DNS statistical features",
+  "dataset": "CVUT DNS Threats Dataset",
+  "deduplicated": true,
+  "random_state": 42,
+  "train_rows": 345305,
+  "validation_rows": 60937,
+  "training_distribution": {
+    "0": 400000,
+    "1": 6242
+  },
+  "char_ngram_range": [
+    2,
+    6
+  ],
+  "max_tfidf_features": 75000,
+  "numeric_features": [
+    "query_length",
+    "label_count",
+    "longest_label_length",
+    "subdomain_depth",
+    "digit_ratio",
+    "alphabetic_ratio",
+    "alphanumeric_ratio",
+    "unique_char_ratio",
+    "entropy",
+    "average_label_entropy",
+    "max_label_entropy",
+    "vowel_ratio",
+    "consonant_ratio",
+    "hyphen_ratio",
+    "underscore_ratio",
+    "numeric_label_count",
+    "hex_character_ratio",
+    "repeated_character_ratio",
+    "max_character_run",
+    "unique_bigram_ratio",
+    "suspicious_tld"
+  ],
+  "training_time_seconds": 824.423
+}

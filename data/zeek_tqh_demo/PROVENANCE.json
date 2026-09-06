@@ -1,0 +1,23 @@
+{
+  "dataset": "TQH-C2",
+  "source_cell": "A_i30_j0",
+  "profile": "A",
+  "encryption": "TLS",
+  "purpose": "NETRA dashboard replay fixture",
+  "contains_tls_payload": false,
+  "contains_malware_binary": false,
+  "records": 8,
+  "malicious_c2_records": 4,
+  "benign_records": 4,
+  "malicious_source": "172.20.0.54",
+  "malicious_destination": "172.20.0.10",
+  "malicious_ja4": "t13i131000_f57a46bbacb6_e5728521abd4",
+  "malicious_ja4s": "t130200_1301_a56c5b993250",
+  "malicious_timestamps": [
+    1782780605.702518,
+    1782780635.706095,
+    1782780665.707588,
+    1782780695.709651
+  ],
+  "note": "Metadata-only replay fixture derived from the public TQH-C2 dataset. Not an NTRO-provided dataset."
+}

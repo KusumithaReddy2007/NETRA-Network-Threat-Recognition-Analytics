@@ -1,0 +1,35 @@
+{
+  "test_rows": 620703,
+  "macro_f1": 0.5784382581050118,
+  "weighted_f1": 0.8011982039413745,
+  "macro_precision": 0.5650958584588882,
+  "macro_recall": 0.7679084349188413,
+  "dns_tunnel_precision": 0.08463446665693856,
+  "dns_tunnel_recall": 0.7440667094291212,
+  "dns_tunnel_f1": 0.15198165738617753,
+  "mean_prediction_confidence": 0.7218167185783386,
+  "evaluation_seconds": 42.411501342000065,
+  "evaluation_rows_per_second": 14635.251768022616,
+  "confusion_matrix": [
+    [
+      167779,
+      66829,
+      1464
+    ],
+    [
+      46782,
+      325208,
+      11082
+    ],
+    [
+      1,
+      398,
+      1160
+    ]
+  ],
+  "class_names": [
+    "BENIGN",
+    "DGA",
+    "DNS_TUNNEL"
+  ]
+}

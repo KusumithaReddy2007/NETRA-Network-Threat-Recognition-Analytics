@@ -1,0 +1,240 @@
+{
+  "evaluation_type": "per-source-file stratified holdout",
+  "dataset": "CICIDS2017 files available locally",
+  "random_state": 42,
+  "test_size_per_source_file": 0.2,
+  "max_train_per_class": 40000,
+  "max_test_per_class": 10000,
+  "limitations": [
+    "Raw files do not contain Flow ID, source IP, destination IP, protocol, or timestamp in the available copy.",
+    "Therefore this is not a session-independent or temporal evaluation.",
+    "Evaluation should be treated as a stronger holdout experiment than the previous random split, but not as a fully independent real-world benchmark."
+  ],
+  "source_summary": {
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "total_rows": 220917,
+      "train_rows": 176733,
+      "test_rows": 44184,
+      "train_classes": {
+        "DDOS": 102410,
+        "BENIGN": 74323
+      },
+      "test_classes": {
+        "DDOS": 25603,
+        "BENIGN": 18581
+      }
+    },
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "total_rows": 209949,
+      "train_rows": 167959,
+      "test_rows": 41990,
+      "train_classes": {
+        "BENIGN": 95404,
+        "PORTSCAN": 72555
+      },
+      "test_classes": {
+        "BENIGN": 23851,
+        "PORTSCAN": 18139
+      }
+    },
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "total_rows": 178572,
+      "train_rows": 142857,
+      "test_rows": 35715,
+      "train_classes": {
+        "BENIGN": 141302,
+        "BOT": 1555
+      },
+      "test_classes": {
+        "BENIGN": 35326,
+        "BOT": 389
+      }
+    },
+    "Monday-WorkingHours.pcap_ISCX.csv": {
+      "total_rows": 483489,
+      "train_rows": 386791,
+      "test_rows": 96698,
+      "train_classes": {
+        "BENIGN": 386791
+      },
+      "test_classes": {
+        "BENIGN": 96698
+      }
+    },
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "total_rows": 244768,
+      "train_rows": 195814,
+      "test_rows": 48954,
+      "train_classes": {
+        "BENIGN": 195814
+      },
+      "test_classes": {
+        "BENIGN": 48954
+      }
+    },
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "total_rows": 159214,
+      "train_rows": 127371,
+      "test_rows": 31843,
+      "train_classes": {
+        "BENIGN": 125698,
+        "WEB_ATTACK": 1673
+      },
+      "test_classes": {
+        "BENIGN": 31425,
+        "WEB_ATTACK": 418
+      }
+    },
+    "Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "total_rows": 405750,
+      "train_rows": 324600,
+      "test_rows": 81150,
+      "train_classes": {
+        "BENIGN": 317333,
+        "BRUTE_FORCE": 7267
+      },
+      "test_classes": {
+        "BENIGN": 79333,
+        "BRUTE_FORCE": 1817
+      }
+    },
+    "Wednesday-workingHours.pcap_ISCX.csv": {
+      "total_rows": 591979,
+      "train_rows": 473583,
+      "test_rows": 118396,
+      "train_classes": {
+        "BENIGN": 319301,
+        "DOS": 154282
+      },
+      "test_classes": {
+        "BENIGN": 79826,
+        "DOS": 38570
+      }
+    }
+  },
+  "train_rows": 170495,
+  "test_rows": 42624,
+  "accuracy": 0.9939236111111112,
+  "macro_f1": 0.9659020040965068,
+  "weighted_f1": 0.994116532942731,
+  "classes": [
+    "BENIGN",
+    "BOT",
+    "BRUTE_FORCE",
+    "DDOS",
+    "DOS",
+    "PORTSCAN",
+    "WEB_ATTACK"
+  ],
+  "per_class": {
+    "BENIGN": {
+      "precision": 0.9965380307504328,
+      "recall": 0.9787,
+      "f1": 0.9875384693002371,
+      "support": 10000
+    },
+    "BOT": {
+      "precision": 0.7962577962577962,
+      "recall": 0.9845758354755784,
+      "f1": 0.8804597701149425,
+      "support": 389
+    },
+    "BRUTE_FORCE": {
+      "precision": 0.9978034047226798,
+      "recall": 1.0,
+      "f1": 0.9989004947773502,
+      "support": 1817
+    },
+    "DDOS": {
+      "precision": 0.9997999399819946,
+      "recall": 0.9995,
+      "f1": 0.9996499474921238,
+      "support": 10000
+    },
+    "DOS": {
+      "precision": 0.9974018187268912,
+      "recall": 0.9981,
+      "f1": 0.9977507872244714,
+      "support": 10000
+    },
+    "PORTSCAN": {
+      "precision": 0.9989004398240704,
+      "recall": 0.9993,
+      "f1": 0.9991001799640072,
+      "support": 10000
+    },
+    "WEB_ATTACK": {
+      "precision": 0.8296146044624746,
+      "recall": 0.9784688995215312,
+      "f1": 0.897914379802415,
+      "support": 418
+    }
+  },
+  "confusion_matrix": [
+    [
+      9787,
+      98,
+      4,
+      2,
+      20,
+      9,
+      80
+    ],
+    [
+      6,
+      383,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1817,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      9995,
+      0,
+      0,
+      0
+    ],
+    [
+      14,
+      0,
+      0,
+      0,
+      9981,
+      2,
+      3
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      2,
+      9993,
+      1
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      4,
+      0,
+      409
+    ]
+  ],
+  "model_path": "/home/kusumitha/Projects/NETRA/models/netra_cicids_holdout_model.joblib",
+  "encoder_path": "/home/kusumitha/Projects/NETRA/models/netra_cicids_holdout_label_encoder.joblib"
+}

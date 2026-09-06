@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	weird
+#open	2026-09-03-23-30-35
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer	source
+#types	time	string	addr	port	addr	port	string	string	bool	string	string
+1788503408.742314	CCDNeo1ptEBwYJRkL2	172.28.137.120	38761	8.8.8.8	53	DNS_unknown_opcode	10	F	zeek	DNS
+#close	2026-09-03-23-30-35

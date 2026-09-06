@@ -1,0 +1,22 @@
+{
+  "model": "LogisticRegression + character TF-IDF + DNS numeric features",
+  "training_dataset": "CVUT DNS Threats Dataset",
+  "random_state": 42,
+  "training_rows": 606441,
+  "class_distribution": {
+    "0": 300000,
+    "1": 300000,
+    "2": 6441
+  },
+  "char_ngram_range": [
+    2,
+    5
+  ],
+  "max_tfidf_features": 50000,
+  "class_names": {
+    "0": "BENIGN",
+    "1": "DGA",
+    "2": "DNS_TUNNEL"
+  },
+  "training_time_seconds": 158.145
+}
