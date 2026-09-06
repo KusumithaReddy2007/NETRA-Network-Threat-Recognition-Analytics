@@ -1,0 +1,361 @@
+{
+  "dataset": "CIC-Bell DNS-EXF-2021",
+  "method": "Independent rule-based DNS exfiltration validation",
+  "production_model_unchanged": true,
+  "subsets": {
+    "light": {
+      "dataset": "CIC-Bell DNS-EXF-2021",
+      "subset": "LIGHT_STATEFUL",
+      "files": [
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_audio.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 4246,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 4246
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_compressed.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 2904,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 2904
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_exe.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 1836,
+          "predicted_attack": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 1835
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_image.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 143,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 143
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_text.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 921,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 921
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_video.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 1245,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 1245
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_benign/Benign/stateful_features-_light_benign.pcap.csv",
+          "label": "BENIGN",
+          "rows": 22768,
+          "predicted_attack": 87,
+          "tp": 0,
+          "fp": 87,
+          "tn": 22681,
+          "fn": 0
+        }
+      ],
+      "summary": {
+        "rows": 34063,
+        "tp": 1,
+        "fp": 87,
+        "tn": 22681,
+        "fn": 11294,
+        "accuracy": 0.6658838035404985,
+        "precision": 0.011363636363636364,
+        "recall": 8.853474988933157e-05,
+        "f1": 0.00017570060616709125,
+        "false_positive_rate": 0.003821152494729445
+      }
+    },
+    "heavy": {
+      "dataset": "CIC-Bell DNS-EXF-2021",
+      "subset": "HEAVY_STATEFUL",
+      "files": [
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_audio.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 10735,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 10735
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_compressed.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 10424,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 10424
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_exe.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 9980,
+          "predicted_attack": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 9979
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_image.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 11076,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 11076
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_text.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 18916,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 18916
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_video.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 10897,
+          "predicted_attack": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 10896
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_benign/Benign/stateful_features-benign_1.pcap.csv",
+          "label": "BENIGN",
+          "rows": 52438,
+          "predicted_attack": 84,
+          "tp": 0,
+          "fp": 84,
+          "tn": 52354,
+          "fn": 0
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_benign/Benign/stateful_features-benign_2.pcap.csv",
+          "label": "BENIGN",
+          "rows": 34560,
+          "predicted_attack": 145,
+          "tp": 0,
+          "fp": 145,
+          "tn": 34415,
+          "fn": 0
+        }
+      ],
+      "summary": {
+        "rows": 159026,
+        "tp": 2,
+        "fp": 229,
+        "tn": 86769,
+        "fn": 72026,
+        "accuracy": 0.5456403355426157,
+        "precision": 0.008658008658008658,
+        "recall": 2.7766979507969124e-05,
+        "f1": 5.535642618912523e-05,
+        "false_positive_rate": 0.0026322444194119407
+      }
+    },
+    "combined": {
+      "dataset": "CIC-Bell DNS-EXF-2021",
+      "subset": "ALL_STATEFUL",
+      "files": [
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_audio.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 4246,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 4246
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_compressed.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 2904,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 2904
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_exe.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 1836,
+          "predicted_attack": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 1835
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_image.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 143,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 143
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_text.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 921,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 921
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_attack/Attacks/stateful_features-light_video.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 1245,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 1245
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_audio.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 10735,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 10735
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_compressed.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 10424,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 10424
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_exe.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 9980,
+          "predicted_attack": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 9979
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_image.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 11076,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 11076
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_text.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 18916,
+          "predicted_attack": 0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 18916
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_attack/Attacks/stateful_features-heavy_video.pcap.csv",
+          "label": "DNS_EXFILTRATION",
+          "rows": 10897,
+          "predicted_attack": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 10896
+        },
+        {
+          "file": "data/dns_exf_cicbell/light_benign/Benign/stateful_features-_light_benign.pcap.csv",
+          "label": "BENIGN",
+          "rows": 22768,
+          "predicted_attack": 87,
+          "tp": 0,
+          "fp": 87,
+          "tn": 22681,
+          "fn": 0
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_benign/Benign/stateful_features-benign_1.pcap.csv",
+          "label": "BENIGN",
+          "rows": 52438,
+          "predicted_attack": 84,
+          "tp": 0,
+          "fp": 84,
+          "tn": 52354,
+          "fn": 0
+        },
+        {
+          "file": "data/dns_exf_cicbell/heavy_benign/Benign/stateful_features-benign_2.pcap.csv",
+          "label": "BENIGN",
+          "rows": 34560,
+          "predicted_attack": 145,
+          "tp": 0,
+          "fp": 145,
+          "tn": 34415,
+          "fn": 0
+        }
+      ],
+      "summary": {
+        "rows": 193089,
+        "tp": 3,
+        "fp": 316,
+        "tn": 109450,
+        "fn": 83320,
+        "accuracy": 0.5668525912920984,
+        "precision": 0.009404388714733543,
+        "recall": 3.6004464553604646e-05,
+        "f1": 7.173429616699744e-05,
+        "false_positive_rate": 0.0028788513747426345
+      }
+    }
+  }
+}

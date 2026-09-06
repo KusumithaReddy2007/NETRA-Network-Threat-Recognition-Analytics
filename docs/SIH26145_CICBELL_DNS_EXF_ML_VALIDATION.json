@@ -1,0 +1,118 @@
+{
+  "dataset": "CIC-Bell DNS-EXF-2021",
+  "method": "Dedicated RandomForest binary validation classifier",
+  "production_netra_dns_model_modified": false,
+  "features": [
+    "rr_name_entropy",
+    "rr_name_length",
+    "rr_count",
+    "A_frequency",
+    "NS_frequency",
+    "CNAME_frequency",
+    "SOA_frequency",
+    "NULL_frequency",
+    "PTR_frequency",
+    "HINFO_frequency",
+    "MX_frequency",
+    "TXT_frequency",
+    "AAAA_frequency",
+    "SRV_frequency",
+    "OPT_frequency",
+    "ttl_mean",
+    "ttl_variance"
+  ],
+  "light_held_out": {
+    "rows": 13550,
+    "TP": 2159,
+    "FP": 3264,
+    "TN": 8120,
+    "FN": 7,
+    "accuracy": 0.7585977859778598,
+    "precision": 0.3981191222570533,
+    "recall": 0.9967682363804248,
+    "f1": 0.5689814204770062,
+    "false_positive_rate": 0.286718200983837
+  },
+  "heavy_independent": {
+    "rows": 141044,
+    "TP": 71503,
+    "FP": 20216,
+    "TN": 48800,
+    "FN": 525,
+    "accuracy": 0.8529465982246675,
+    "precision": 0.7795876535941298,
+    "recall": 0.9927111678791581,
+    "f1": 0.8733350840015389,
+    "false_positive_rate": 0.2929175843282717
+  },
+  "feature_importance": [
+    {
+      "feature": "A_frequency",
+      "importance": 0.30470498600746593
+    },
+    {
+      "feature": "ttl_mean",
+      "importance": 0.2086542923641188
+    },
+    {
+      "feature": "PTR_frequency",
+      "importance": 0.18767207498588237
+    },
+    {
+      "feature": "rr_name_entropy",
+      "importance": 0.13262706416230674
+    },
+    {
+      "feature": "rr_name_length",
+      "importance": 0.08290557445974767
+    },
+    {
+      "feature": "rr_count",
+      "importance": 0.0498591419317275
+    },
+    {
+      "feature": "ttl_variance",
+      "importance": 0.03357686608875105
+    },
+    {
+      "feature": "NS_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "CNAME_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "SOA_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "NULL_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "HINFO_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "MX_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "TXT_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "AAAA_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "SRV_frequency",
+      "importance": 0.0
+    },
+    {
+      "feature": "OPT_frequency",
+      "importance": 0.0
+    }
+  ]
+}

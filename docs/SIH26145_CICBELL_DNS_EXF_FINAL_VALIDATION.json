@@ -1,0 +1,93 @@
+{
+  "validation": "CIC-Bell DNS-EXF-2021",
+  "scope": "Independent DNS exfiltration validation",
+  "data_representation": "Stateful CSV features only",
+  "production_netra_dns_model_modified": false,
+  "dataset_layout": {
+    "light_attack_rows": 11295,
+    "light_benign_rows": 22768,
+    "heavy_attack_rows": 72028,
+    "heavy_benign_rows": 69016,
+    "attack_files_light": 6,
+    "attack_files_heavy": 6,
+    "benign_files_light": 1,
+    "benign_files_heavy": 3
+  },
+  "methodology": {
+    "light": {
+      "type": "Held-out validation",
+      "attack_train_files": 4,
+      "attack_test_files": 2,
+      "benign_split": "Deterministic row split of the single light-benign stateful CSV"
+    },
+    "heavy": {
+      "type": "Independent cross-scenario evaluation",
+      "trained_on": "Light attack + light benign",
+      "tested_on": "Heavy attack + heavy benign"
+    },
+    "classifier": "RandomForest",
+    "threshold_selection": "Selected from light holdout"
+  },
+  "results": {
+    "light_held_out": {
+      "rows": 13550,
+      "TP": 2159,
+      "FP": 3264,
+      "TN": 8120,
+      "FN": 7,
+      "accuracy": 0.7585977859778598,
+      "precision": 0.3981191222570533,
+      "recall": 0.9967682363804248,
+      "f1": 0.5689814204770062,
+      "false_positive_rate": 0.286718200983837
+    },
+    "heavy_independent": {
+      "rows": 141044,
+      "TP": 71503,
+      "FP": 20216,
+      "TN": 48800,
+      "FN": 525,
+      "accuracy": 0.8529465982246675,
+      "precision": 0.7795876535941298,
+      "recall": 0.9927111678791581,
+      "f1": 0.8733350840015389,
+      "false_positive_rate": 0.2929175843282717
+    },
+    "threshold_selected_light": {
+      "threshold": 0.5,
+      "accuracy": 0.7585977859778598,
+      "precision": 0.3981191222570533,
+      "recall": 0.9967682363804248,
+      "f1": 0.5689814204770062,
+      "fpr": 0.286718200983837,
+      "TP": 2159,
+      "FP": 3264,
+      "TN": 8120,
+      "FN": 7
+    },
+    "threshold_selected_heavy": {
+      "threshold": 0.5,
+      "accuracy": 0.8519327302118488,
+      "precision": 0.7797260933295412,
+      "recall": 0.9896290331537735,
+      "f1": 0.8722269128641875,
+      "fpr": 0.29177292222093426,
+      "TP": 71281,
+      "FP": 20137,
+      "TN": 48879,
+      "FN": 747
+    }
+  },
+  "interpretation": {
+    "positive_finding": "The dedicated CIC-Bell benchmark achieved very high attack recall on both light and heavy evaluation sets.",
+    "limitation": "False-positive rate remained high at approximately 29 percent, so this experiment is not treated as the production NETRA DNS detector.",
+    "feature_dependence": "The validation model relied strongly on dataset-specific response and DNS-record characteristics, including A_frequency, ttl_mean, PTR_frequency, rr_name_entropy, and rr_name_length.",
+    "status": "External validation evidence; not a production model claim."
+  },
+  "source_files": [
+    "data/dns_exf_cicbell/light_attack/*.csv",
+    "data/dns_exf_cicbell/light_benign/*.csv",
+    "data/dns_exf_cicbell/heavy_attack/*.csv",
+    "data/dns_exf_cicbell/heavy_benign/*.csv"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "dataset": "CIC-Bell DNS-EXF-2021",
+  "method": "RandomForest with threshold selected on light holdout",
+  "production_netra_dns_model_modified": false,
+  "selected_threshold": 0.5,
+  "light_holdout_selected_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.7585977859778598,
+    "precision": 0.3981191222570533,
+    "recall": 0.9967682363804248,
+    "f1": 0.5689814204770062,
+    "fpr": 0.286718200983837,
+    "TP": 2159,
+    "FP": 3264,
+    "TN": 8120,
+    "FN": 7
+  },
+  "heavy_independent_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.8519327302118488,
+    "precision": 0.7797260933295412,
+    "recall": 0.9896290331537735,
+    "f1": 0.8722269128641875,
+    "fpr": 0.29177292222093426,
+    "TP": 71281,
+    "FP": 20137,
+    "TN": 48879,
+    "FN": 747
+  }
+}
