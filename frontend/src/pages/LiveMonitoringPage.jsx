@@ -220,12 +220,12 @@ function LiveMonitoringPage({
           {replaying ? (
             <>
               <Pause size={16} />
-              FLOW REPLAY RUNNING
+              REPLAYING CAPTURED FLOWS
             </>
           ) : (
             <>
               <Play size={16} />
-              START FLOW REPLAY
+              REPLAY CAPTURED FLOWS
             </>
           )}
         </button>
@@ -293,7 +293,7 @@ function LiveMonitoringPage({
           <div className="special-card-heading">
             <div>
               <span>STREAM PROCESSOR</span>
-              <h3>Live Traffic Activity</h3>
+              <h3>Replay Traffic Activity</h3>
             </div>
 
             <div className={`live-chip ${replaying ? "active" : ""}`}>
@@ -361,9 +361,10 @@ function LiveMonitoringPage({
 
                 <div className="event-copy">
                   <strong>{alert.threat_class || "UNKNOWN"}</strong>
-                  <span>
+                  <span>{threatCoverageLabel(alert.threat_class)}</span>
+                  <small>
                     {alert.flow_id || "FLOW IDENTIFIED"}
-                  </span>
+                  </small>
                 </div>
 
                 <span className="event-confidence">
@@ -774,7 +775,8 @@ function SeverityBadge({ severity }) {
 }
 
 function AlertDetails({ alert }) {
-  const evidence = alert.supporting_evidence || {};
+  const evidence = getAlertEvidence(alert);
+  const evidenceEntries = Object.entries(evidence);
 
   return (
     <div className="alert-detail-layout">
@@ -782,7 +784,11 @@ function AlertDetails({ alert }) {
         <div className="alert-title-row">
           <div>
             <span className="detail-label">THREAT CLASS</span>
-            <h2>{alert.threat_class || "UNKNOWN"}</h2>
+            <h2>{alert?.threat_class || "UNKNOWN"}</h2>
+
+            <div className="threat-category-badge">
+              {threatCoverageLabel(alert?.threat_class)}
+            </div>
           </div>
 
           <div className="confidence-display">
@@ -790,7 +796,7 @@ function AlertDetails({ alert }) {
             <div>
               <span>CONFIDENCE</span>
               <strong>
-                {formatNumber(alert.confidence)}%
+                {formatNumber(alert?.confidence)}%
               </strong>
             </div>
           </div>
@@ -800,25 +806,27 @@ function AlertDetails({ alert }) {
           <DetailItem
             icon={Clock3}
             label="TIMESTAMP"
-            value={formatTimestamp(alert.timestamp)}
+            value={formatTimestamp(alert?.timestamp)}
           />
 
           <DetailItem
             icon={Target}
             label="FLOW ID"
-            value={alert.flow_id || "N/A"}
+            value={alert?.flow_id || "N/A"}
           />
 
           <DetailItem
             icon={ShieldAlert}
             label="SEVERITY"
-            value={String(alert.severity || "UNKNOWN").toUpperCase()}
+            value={String(
+              alert?.severity || "UNKNOWN"
+            ).toUpperCase()}
           />
 
           <DetailItem
             icon={Radar}
             label="ALERT ID"
-            value={alert.alert_id || "N/A"}
+            value={alert?.alert_id || "N/A"}
           />
         </div>
       </div>
@@ -826,20 +834,47 @@ function AlertDetails({ alert }) {
       <div className="evidence-panel">
         <div className="evidence-heading">
           <span>SUPPORTING EVIDENCE</span>
-          <strong>{Object.keys(evidence).length} SIGNALS</strong>
+          <strong>
+            {evidenceEntries.length} INDICATORS
+          </strong>
         </div>
 
         <div className="evidence-grid">
-          {Object.entries(evidence).map(([key, value]) => (
+          {evidenceEntries.map(([key, value]) => (
             <div className="evidence-item" key={key}>
-              <span>{formatKey(key)}</span>
+              <span>{evidenceLabel(key)}</span>
               <strong>{formatEvidenceValue(value)}</strong>
             </div>
           ))}
 
-          {!Object.keys(evidence).length && (
+          {!evidenceEntries.length && (
             <div className="evidence-empty">
-              No supporting evidence was returned for this alert.
+              <strong>NO DETECTOR EVIDENCE AVAILABLE</strong>
+              <span>
+                Standard alert metadata is available for this detection.
+              </span>
+              <div className="evidence-fallback">
+                <div className="evidence-item">
+                  <span>FLOW ID</span>
+                  <strong>
+                    {alert?.flow_id || "N/A"}
+                  </strong>
+                </div>
+
+                <div className="evidence-item">
+                  <span>THREAT</span>
+                  <strong>
+                    {alert?.threat_class || "UNKNOWN"}
+                  </strong>
+                </div>
+
+                <div className="evidence-item">
+                  <span>CONFIDENCE</span>
+                  <strong>
+                    {formatNumber(alert?.confidence)}%
+                  </strong>
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -847,6 +882,106 @@ function AlertDetails({ alert }) {
     </div>
   );
 }
+
+function getAlertEvidence(alert) {
+  if (!alert || typeof alert !== "object") {
+    return {};
+  }
+
+  const candidates = [
+    alert.supporting_evidence,
+    alert.evidence,
+    alert.supportingEvidence,
+    alert.detection_evidence,
+    alert.detectionEvidence,
+  ];
+
+  for (const candidate of candidates) {
+    if (
+      candidate &&
+      typeof candidate === "object" &&
+      !Array.isArray(candidate) &&
+      Object.keys(candidate).length > 0
+    ) {
+      return candidate;
+    }
+  }
+
+  // Some API responses can wrap the alert payload.
+  const nestedCandidates = [
+    alert.data?.supporting_evidence,
+    alert.data?.evidence,
+    alert.result?.supporting_evidence,
+    alert.result?.evidence,
+    alert.detection?.supporting_evidence,
+    alert.detection?.evidence,
+  ];
+
+  for (const candidate of nestedCandidates) {
+    if (
+      candidate &&
+      typeof candidate === "object" &&
+      !Array.isArray(candidate) &&
+      Object.keys(candidate).length > 0
+    ) {
+      return candidate;
+    }
+  }
+
+  return {};
+}
+
+function evidenceLabel(key) {
+  const labels = {
+    source_ip: "SOURCE IP",
+    destination_ip: "DESTINATION IP",
+    destination: "DESTINATION",
+    flow_id: "FLOW ID",
+    timestamp: "TIMESTAMP",
+    protocol: "PROTOCOL",
+    window_seconds: "WINDOW",
+    source_flow_count: "FLOW COUNT",
+    source_flow_rate: "FLOW RATE",
+    destination_source_entropy: "SOURCE ENTROPY",
+    syn_like_pattern: "SYN-LIKE PATTERN",
+    unique_destination_ports: "DESTINATION PORTS",
+    unique_destination_hosts: "DESTINATION HOSTS",
+    outbound_bytes: "OUTBOUND BYTES",
+    inbound_bytes: "INBOUND BYTES",
+    outbound_inbound_ratio: "OUTBOUND / INBOUND RATIO",
+    event_count: "EVENT COUNT",
+    periodicity_cv: "PERIODICITY CV",
+    query: "QUERY",
+    query_count: "QUERY COUNT",
+    query_length: "QUERY LENGTH",
+    longest_label_length: "LONGEST LABEL",
+    entropy: "ENTROPY",
+    max_label_entropy: "MAX LABEL ENTROPY",
+    digit_ratio: "DIGIT RATIO",
+    dominant_record_type: "DOMINANT RECORD TYPE",
+    dominant_ratio: "DOMINANT RATIO",
+    record_type_diversity: "RECORD TYPE DIVERSITY",
+    tls_version: "TLS VERSION",
+    cipher: "CIPHER",
+    server_name: "SERVER NAME",
+    ja3: "JA3",
+    ja3s: "JA3S",
+    ja4: "JA4",
+    ja4s: "JA4S",
+    quic_version: "QUIC VERSION",
+    client_protocol: "APPLICATION PROTOCOL",
+    supporting_signal_count: "SUPPORTING SIGNALS",
+    payload_decryption: "PAYLOAD DECRYPTION",
+  };
+
+  return (
+    labels[key] ||
+    String(key || "")
+      .replace(/_/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase())
+  );
+}
+
 
 function DetailItem({ icon: Icon, label, value }) {
   return (
@@ -932,6 +1067,26 @@ function formatKey(key) {
   return String(key)
     .replaceAll("_", " ")
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+
+function threatCoverageLabel(threatClass) {
+  const threat = String(threatClass || "").toUpperCase();
+
+  const labels = {
+    DDOS: "VOLUMETRIC / PROTOCOL DDoS",
+    PORTSCAN: "RECONNAISSANCE",
+    BOT_C2: "BOTNET C2 BEACONING",
+    DGA: "DGA / DNS ANOMALY",
+    DNS_TUNNEL: "DNS TUNNELLING",
+    DNS_RECORD_ANOMALY: "DNS RECORD-TYPE ANOMALY",
+    EXFILTRATION: "DATA EXFILTRATION",
+    DOS: "DENIAL OF SERVICE",
+    BRUTE_FORCE: "BRUTE FORCE",
+    WEB_ATTACK: "WEB ATTACK",
+  };
+
+  return labels[threat] || "NETWORK THREAT DETECTION";
 }
 
 function formatEvidenceValue(value) {

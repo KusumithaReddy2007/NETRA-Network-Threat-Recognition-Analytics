@@ -24,6 +24,7 @@ import {
 
 import DashboardPage from "./pages/DashboardPage";
 import LiveMonitoringPage from "./pages/LiveMonitoringPage";
+import LiveTrafficPage from "./pages/LiveTrafficPage";
 import ThreatsPage from "./pages/ThreatsPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import FlowsPage from "./pages/FlowsPage";
@@ -38,11 +39,12 @@ import "./App.css";
 const NAVIGATION = [
   { label: "Dashboard", icon: Home },
   { label: "Live Monitoring", icon: Radar },
+  { label: "Live Traffic", icon: Activity },
   { label: "Traffic Architecture", icon: Network },
   { label: "Threats", icon: ShieldAlert },
   { label: "Analytics", icon: BarChart3 },
   { label: "Flows", icon: Network },
-  { label: "Alerts", icon: Bell },
+  { label: "Alerts", icon: ShieldAlert },
   { label: "Reports", icon: FileBarChart },
   { label: "Model", icon: Bot },
   { label: "Settings", icon: Settings },
@@ -890,6 +892,9 @@ function renderPage({
   runReplay,
 }) {
   switch (activePage) {
+    case "Live Traffic":
+      return <LiveTrafficPage />;
+
     case "Live Monitoring":
       return (
         <LiveMonitoringPage
@@ -921,6 +926,7 @@ function renderPage({
       return (
         <AnalyticsPage
           analytics={analytics}
+          alerts={unifiedAlerts}
         />
       );
 

@@ -1,0 +1,55 @@
+{
+  "model_name": "netra_cicids_model",
+  "model_type": "RandomForest",
+  "version": "v1.0.0",
+  "role": "Primary flow threat classifier",
+  "dataset": "CIC-IDS2017-derived",
+  "features": [
+    "Destination Port",
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Fwd Packet Length Mean",
+    "Bwd Packet Length Mean",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "SYN Flag Count",
+    "ACK Flag Count",
+    "Down/Up Ratio",
+    "Average Packet Size",
+    "Active Mean",
+    "Idle Mean"
+  ],
+  "classes": [
+    "BENIGN",
+    "DOS",
+    "PORTSCAN",
+    "DDOS",
+    "BRUTE_FORCE",
+    "WEB_ATTACK",
+    "BOT"
+  ],
+  "training_rows": 170495,
+  "holdout_rows": 42624,
+  "validation_method": "Stratified per-source-file holdout",
+  "metrics": {
+    "accuracy_percent": 99.39,
+    "macro_f1_percent": 96.59,
+    "weighted_f1_percent": 99.41
+  },
+  "trained_date": "Not reported",
+  "code_version": "v1.0.0",
+  "artifact": "models/netra_cicids_model.joblib",
+  "label_encoder": "models/netra_label_encoder.joblib",
+  "limitations": [
+    "Evaluation uses a practical per-source-file stratified holdout.",
+    "This is not an independent temporal or session benchmark.",
+    "Reported metrics should not be interpreted as guaranteed production-world accuracy."
+  ]
+}

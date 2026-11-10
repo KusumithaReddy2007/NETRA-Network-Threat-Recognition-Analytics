@@ -1,48 +1,45 @@
 # NETRA
+### Network Threat Recognition and Analytics
 
-## AI-Based Detection of Cyber Threats in Unidirectional IP Traffic
+**AI-Based Detection of Cyber Threats in Unidirectional IP Traffic**
 
-NETRA is a passive, AI-assisted network threat detection prototype designed for critical-infrastructure environments where traffic can be observed only in one direction through passive mirroring or data-diode style monitoring.
+NETRA is a passive AI-assisted network threat detection platform designed for critical infrastructure. It analyzes network traffic metadata using machine learning and presents security insights through a React dashboard.
 
-The system analyzes observed network metadata without contacting the original source or destination and without decrypting protected application payloads.
+## Features
+- AI-based network flow classification
+- DNS exfiltration evaluation
+- TLS and QUIC metadata analysis
+- Live traffic monitoring
+- Threat alerts and analytics
+- Passive-only monitoring
 
-## Validation & Evidence
+## Technology Stack
+- Python, FastAPI, Uvicorn
+- React, Vite, JavaScript
+- Scikit-learn, NumPy, Pandas
+- Docker and Docker Compose
 
-### Primary NETRA Flow Detection
+## Evaluation Results
+| Metric | Result |
+|---|---:|
+| Flow accuracy | 99.39% |
+| Macro F1 | 96.59% |
+| DNS validation accuracy | 85.29% |
+| DNS false-positive rate | 29.29% |
+| Streaming throughput | 103.79 flows/sec |
 
-Train flows: 170,495
-Test flows: 42,624
-Accuracy: 99.39%
-Macro F1: 96.59%
-Weighted F1: 99.41%
+These are documented prototype results from specific evaluation scenarios, not production guarantees.
 
-### Independent DNS Exfiltration Validation
+## Run Locally
+Backend: `PYTHONPATH=backend uvicorn app.main:app --app-dir backend --port 8000`
+Frontend: `cd frontend && npm install && npm run dev`
 
-CIC-Bell DNS-EXF-2021 is maintained as external validation evidence and does not replace or modify the production NETRA DNS detector.
+API documentation: http://127.0.0.1:8000/docs
 
-Heavy independent evaluation:
-Accuracy: 85.29%
-Precision: 77.96%
-Recall: 99.27%
-F1: 87.33%
-False-positive rate: 29.29%
+## Project Status
+NETRA is a functional SIH research prototype demonstrating passive traffic ingestion, machine-learning inference, behavioral detection and analyst-facing visualization.
 
-### Encrypted Traffic Detection
+## License
+No license has been specified yet.
 
-TLS and QUIC analysis uses metadata only. Payload decryption is disabled.
-
-TQH-C2 TLS replay: 8 records, 1 BOT_C2 alert, confidence 89.99.
-
-Real QUIC replay: 1 record, 0 alerts.
-
-### Streaming Performance
-
-Approximately 103.79 flows/second, 9.62 ms average latency, 19.78 ms P95 latency, 0 dropped flows.
-
-### Passive-Only Design
-
-NETRA is designed for read-only/passive observation and does not require active probing, endpoint contact, or mitigation commands.
-
-### Project Status
-
-NETRA is a functional SIH prototype demonstrating passive ingestion, streaming feature extraction, machine-learning inference, behavioral threat detection, standardized alerts, and analyst-facing visualization for unidirectional IP traffic.
+**NETRA — Detect threats. Understand traffic. Strengthen network security.**

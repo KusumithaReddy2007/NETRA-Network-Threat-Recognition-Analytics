@@ -1,0 +1,68 @@
+{
+  "project": "NETRA",
+  "registry_version": "1.0.0",
+  "models": [
+    {
+      "name": "netra_cicids_model",
+      "type": "RandomForest",
+      "version": "v1.0.0",
+      "role": "Primary flow threat classifier",
+      "dataset": "CIC-IDS2017-derived",
+      "features": 20,
+      "classes": [
+        "BENIGN",
+        "DOS",
+        "PORTSCAN",
+        "DDOS",
+        "BRUTE_FORCE",
+        "WEB_ATTACK",
+        "BOT"
+      ],
+      "training_rows": 170495,
+      "holdout_rows": 42624,
+      "validation_method": "Stratified per-source-file holdout",
+      "accuracy_percent": 99.39,
+      "macro_f1_percent": 96.59,
+      "weighted_f1_percent": 99.41,
+      "trained_date": "Not reported",
+      "path": "models/netra_cicids_model.joblib",
+      "label_encoder_path": "models/netra_label_encoder.joblib",
+      "limitations": "Practical stratified holdout; not an independent temporal or session benchmark."
+    },
+    {
+      "name": "netra_dns_model",
+      "type": "LogisticRegression + Character TF-IDF",
+      "version": "v1.0.0",
+      "role": "DNS lexical/classification support model",
+      "dataset": "CVUT DNS Threats Dataset",
+      "features": 21,
+      "classes": [
+        "BENIGN",
+        "DGA",
+        "DNS_TUNNEL"
+      ],
+      "training_rows": 606441,
+      "validation_method": "Documented test-set evaluation",
+      "accuracy_percent": 79.61,
+      "macro_f1_percent": 57.84,
+      "weighted_f1_percent": 80.12,
+      "trained_date": "Not reported",
+      "path": "models/netra_dns_model.joblib",
+      "limitations": "DNS_TUNNEL class has substantially lower F1 than BENIGN/DGA; behavioral DNS detection is also used by NETRA."
+    }
+  ],
+  "external_validation": [
+    {
+      "name": "CIC-Bell DNS-EXF-2021",
+      "type": "External validation evidence",
+      "production_model_modified": false,
+      "scope": "Independent DNS exfiltration validation",
+      "heavy_independent_accuracy_percent": 85.29,
+      "heavy_independent_precision_percent": 77.96,
+      "heavy_independent_recall_percent": 99.27,
+      "heavy_independent_f1_percent": 87.33,
+      "heavy_independent_false_positive_rate_percent": 29.29,
+      "status": "External validation evidence; not a production NETRA DNS model claim."
+    }
+  ]
+}

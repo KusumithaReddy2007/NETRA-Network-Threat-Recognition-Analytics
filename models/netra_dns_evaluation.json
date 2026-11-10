@@ -8,8 +8,8 @@
   "dns_tunnel_recall": 0.7440667094291212,
   "dns_tunnel_f1": 0.15198165738617753,
   "mean_prediction_confidence": 0.7218167185783386,
-  "evaluation_seconds": 42.411501342000065,
-  "evaluation_rows_per_second": 14635.251768022616,
+  "evaluation_seconds": 109.61948831999985,
+  "evaluation_rows_per_second": 5662.341701395755,
   "confusion_matrix": [
     [
       167779,

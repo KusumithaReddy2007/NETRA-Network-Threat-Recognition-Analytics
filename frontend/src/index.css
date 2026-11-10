@@ -34,3 +34,1823 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #24526c;
 }
+
+/* =========================================
+   NETRA LIVE TRAFFIC PAGE
+========================================= */
+
+.live-traffic-status {
+  display: grid;
+  grid-template-columns: 130px 1fr auto;
+  align-items: center;
+  gap: 28px;
+  padding: 24px;
+}
+
+.live-flow-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.live-flow-header,
+.live-flow-row {
+  display: grid;
+  grid-template-columns:
+    90px
+    minmax(160px, 1.3fr)
+    minmax(160px, 1.3fr)
+    90px
+    90px
+    100px;
+  gap: 16px;
+  align-items: center;
+  min-width: 850px;
+}
+
+.live-flow-header {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(80, 130, 160, 0.25);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #71869a;
+}
+
+.live-flow-row {
+  padding: 13px 12px;
+  border-bottom: 1px solid rgba(80, 130, 160, 0.12);
+  font-size: 12px;
+}
+
+.live-flow-row:hover {
+  background: rgba(0, 200, 255, 0.04);
+}
+
+.live-flow-row strong,
+.live-flow-row span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.protocol-chip {
+  display: inline-flex;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: rgba(0, 180, 220, 0.10);
+  color: #58d8ff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.flow-status {
+  display: inline-flex;
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.flow-status.normal {
+  background: rgba(20, 210, 130, 0.10);
+  color: #46e6a5;
+}
+
+.flow-status.threat {
+  background: rgba(255, 70, 90, 0.12);
+  color: #ff6678;
+}
+
+.live-traffic-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(350px, 1fr);
+  gap: 16px;
+}
+
+.live-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.special-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.special-card-heading span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: #71869a;
+  margin-bottom: 6px;
+}
+
+.special-card-heading h3 {
+  margin: 0;
+}
+
+.event-stream {
+  display: flex;
+  flex-direction: column;
+}
+
+.stream-event {
+  display: grid;
+  grid-template-columns: 70px 8px minmax(0, 1fr) 60px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(80, 130, 160, 0.14);
+}
+
+.event-copy {
+  min-width: 0;
+}
+
+.event-copy strong,
+.event-copy span,
+.event-copy small {
+  display: block;
+}
+
+.event-copy span,
+.event-copy small {
+  margin-top: 4px;
+  color: #8192a2;
+}
+
+.event-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.event-indicator.high,
+.event-indicator.critical {
+  background: #ff5268;
+}
+
+.event-indicator.medium {
+  background: #ffb020;
+}
+
+.event-indicator.low {
+  background: #48dca1;
+}
+
+.event-confidence {
+  text-align: right;
+  font-size: 11px;
+  color: #55d9b0;
+}
+
+.protocol-distribution {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.protocol-row > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.protocol-row strong {
+  font-size: 11px;
+}
+
+.protocol-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(90, 130, 160, 0.12);
+}
+
+.protocol-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #32c7f5;
+}
+
+.traffic-characteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.traffic-metric {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.traffic-metric > div:first-child {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(0, 180, 255, 0.08);
+  color: #4bd7ff;
+}
+
+.traffic-metric span {
+  display: block;
+  font-size: 10px;
+  color: #71869a;
+  margin-bottom: 4px;
+}
+
+.traffic-metric strong {
+  display: block;
+}
+
+.live-connection-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.live-connection-box > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.live-connection-box span {
+  font-size: 9px;
+  color: #71869a;
+}
+
+.live-connection-box strong {
+  color: #4be3a5;
+}
+
+@media (max-width: 1050px) {
+
+  .live-traffic-grid,
+  .live-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .live-traffic-status {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .live-connection-box {
+    grid-column: 1 / -1;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .live-traffic-status {
+    grid-template-columns: 1fr;
+  }
+
+  .live-connection-box {
+    grid-column: auto;
+  }
+
+  .stream-event {
+    grid-template-columns: 55px 8px minmax(0, 1fr) 50px;
+    gap: 8px;
+  }
+
+}
+
+
+/* =========================================
+   NETRA TRAFFIC INTELLIGENCE CONSOLE
+   ADVANCED SOC STYLE
+========================================= */
+
+.live-traffic-status {
+  position: relative;
+  grid-template-columns: 1fr auto !important;
+  min-height: 150px;
+  padding: 30px 34px !important;
+  overflow: hidden;
+  border: 1px solid rgba(41, 190, 255, 0.22);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(9, 23, 34, 0.96),
+      rgba(8, 19, 29, 0.90)
+    );
+}
+
+.live-traffic-status::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(38, 204, 255, 0.025) 50%,
+      transparent 100%
+    );
+}
+
+.live-traffic-status .monitor-core {
+  display: none !important;
+}
+
+.monitor-status-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.monitor-status-copy .monitor-label {
+  color: #45d9ff;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.monitor-status-copy h2 {
+  font-size: 27px;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+}
+
+.monitor-status-copy p {
+  max-width: 700px;
+  line-height: 1.7;
+  color: #7f97a8;
+}
+
+.live-connection-box {
+  position: relative;
+  z-index: 2;
+  min-width: 180px;
+  padding: 16px 20px;
+  border-left: 1px solid rgba(67, 205, 255, 0.20);
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.live-connection-box strong {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================
+   TELEMETRY STATISTICS STRIP
+========================================= */
+
+.monitor-stats {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.monitor-stat {
+  position: relative;
+  min-height: 105px;
+  padding: 20px !important;
+  border: 1px solid rgba(54, 120, 150, 0.22);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(10, 27, 39, 0.95),
+      rgba(6, 17, 26, 0.95)
+    );
+  overflow: hidden;
+}
+
+.monitor-stat::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(48, 210, 255, 0.55);
+}
+
+.monitor-stat.danger::after {
+  background: rgba(255, 74, 94, 0.75);
+}
+
+.monitor-stat-icon {
+  background: rgba(29, 184, 235, 0.08) !important;
+}
+
+.monitor-stat strong {
+  font-size: 25px !important;
+  letter-spacing: -0.02em;
+}
+
+.monitor-stat span {
+  font-size: 9px !important;
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================
+   LIVE FLOW COMMAND CONSOLE
+========================================= */
+
+.live-traffic-grid {
+  display: grid !important;
+  grid-template-columns:
+    minmax(0, 2.2fr)
+    minmax(330px, 0.8fr) !important;
+  gap: 14px !important;
+  margin-top: 14px;
+}
+
+.live-flow-card {
+  border: 1px solid rgba(43, 183, 240, 0.24) !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 24, 36, 0.98),
+      rgba(6, 17, 26, 0.98)
+    ) !important;
+}
+
+.live-flow-card .special-card-heading {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(80, 140, 170, 0.18);
+}
+
+.live-flow-card .special-card-heading h3 {
+  font-size: 18px;
+}
+
+.live-flow-table {
+  border: 1px solid rgba(65, 140, 170, 0.14);
+  background: rgba(2, 11, 18, 0.45);
+}
+
+.live-flow-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgba(10, 29, 42, 0.98);
+  border-bottom: 1px solid rgba(58, 195, 244, 0.30) !important;
+  color: #4ecff7 !important;
+}
+
+.live-flow-row {
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.live-flow-row:hover {
+  background: rgba(32, 191, 240, 0.06) !important;
+}
+
+.live-flow-row:nth-child(even) {
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.live-flow-row strong {
+  color: #b7cbd8;
+  font-family:
+    "JetBrains Mono",
+    "Fira Code",
+    monospace;
+}
+
+.protocol-chip {
+  border: 1px solid rgba(55, 201, 255, 0.25);
+}
+
+.live-chip.active {
+  letter-spacing: 0.12em;
+  box-shadow:
+    0 0 16px rgba(0, 220, 255, 0.10);
+}
+
+
+/* =========================================
+   THREAT CORRELATION PANEL
+========================================= */
+
+.live-alert-card {
+  border: 1px solid rgba(255, 82, 104, 0.20) !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(27, 15, 22, 0.58),
+      rgba(8, 17, 26, 0.96)
+    ) !important;
+}
+
+.live-alert-card .special-card-heading {
+  border-bottom: 1px solid rgba(255, 90, 110, 0.16);
+  padding-bottom: 16px;
+}
+
+.stream-event {
+  position: relative;
+  padding: 17px 10px !important;
+}
+
+.stream-event::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 2px;
+  background: rgba(255, 70, 90, 0.35);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.stream-event:hover::before {
+  opacity: 1;
+}
+
+.event-copy strong {
+  color: #e5edf2;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.event-copy span {
+  font-family:
+    "JetBrains Mono",
+    "Fira Code",
+    monospace;
+  font-size: 10px;
+}
+
+.event-copy small {
+  font-size: 10px;
+}
+
+.event-confidence {
+  font-family:
+    "JetBrains Mono",
+    monospace;
+  font-weight: 700;
+}
+
+.event-count-chip {
+  min-width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 75, 95, 0.30);
+  background: rgba(255, 70, 90, 0.08);
+}
+
+
+/* =========================================
+   NETWORK TELEMETRY ANALYTICS
+========================================= */
+
+.live-bottom-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 14px !important;
+}
+
+.live-bottom-grid .monitor-card {
+  min-height: 260px;
+  border: 1px solid rgba(52, 130, 160, 0.22);
+}
+
+.protocol-row {
+  padding: 13px;
+  border: 1px solid rgba(60, 135, 165, 0.12);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.protocol-row > div:first-child span {
+  font-family:
+    "JetBrains Mono",
+    "Fira Code",
+    monospace;
+  color: #8fdcf5;
+}
+
+.protocol-row > div:first-child strong {
+  color: #90a6b4;
+}
+
+.protocol-bar {
+  height: 8px !important;
+}
+
+.protocol-bar span {
+  background:
+    linear-gradient(
+      90deg,
+      #148fbd,
+      #42d5f5
+    ) !important;
+}
+
+.traffic-characteristics {
+  gap: 12px !important;
+}
+
+.traffic-metric {
+  padding: 15px;
+  border: 1px solid rgba(60, 135, 165, 0.13);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.traffic-metric strong {
+  font-size: 17px;
+  color: #d8e4ea;
+}
+
+
+/* =========================================
+   TRAFFIC CONSOLE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .live-traffic-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .monitor-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .live-bottom-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .live-traffic-status {
+    grid-template-columns: 1fr !important;
+  }
+
+  .live-connection-box {
+    border-left: none;
+    border-top: 1px solid rgba(67, 205, 255, 0.20);
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .monitor-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+
+/* =====================================================
+   NETRA TRAFFIC COMMAND CENTER
+   ADVANCED TELEMETRY WORKSPACE
+===================================================== */
+
+.telemetry-command-page {
+  padding-bottom: 30px;
+}
+
+.telemetry-command-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 20px;
+}
+
+.command-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.telemetry-last-update {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(72, 177, 220, 0.18);
+  background: rgba(9, 22, 32, 0.55);
+}
+
+.telemetry-last-update > svg {
+  color: #58d8ff;
+}
+
+.telemetry-last-update div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.telemetry-last-update span {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: #71869a;
+}
+
+.telemetry-last-update strong {
+  font-size: 11px;
+  color: #d7e5ee;
+}
+
+
+/* STATUS BAR */
+
+.telemetry-status-bar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 16px;
+  border: 1px solid rgba(70, 137, 170, 0.2);
+  background: rgba(7, 19, 29, 0.72);
+}
+
+.status-signal {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border-right: 1px solid rgba(70, 137, 170, 0.14);
+}
+
+.status-signal:last-child {
+  border-right: none;
+}
+
+.status-signal-icon {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(90, 130, 160, 0.2);
+  background: rgba(90, 130, 160, 0.06);
+  color: #71869a;
+}
+
+.status-signal-icon.active {
+  color: #51dca7;
+  border-color: rgba(81, 220, 167, 0.25);
+  background: rgba(81, 220, 167, 0.06);
+}
+
+.status-signal-icon.danger {
+  color: #ff6678;
+  border-color: rgba(255, 102, 120, 0.3);
+  background: rgba(255, 102, 120, 0.06);
+}
+
+.status-signal > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.status-signal span {
+  font-size: 8px;
+  letter-spacing: 0.09em;
+  color: #71869a;
+}
+
+.status-signal strong {
+  font-size: 11px;
+  color: #c7d3dc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-signal strong.active {
+  color: #51dca7;
+}
+
+.status-signal strong.danger {
+  color: #ff6678;
+}
+
+
+/* OVERVIEW */
+
+.telemetry-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(330px, 0.85fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.telemetry-hero-card {
+  min-height: 235px;
+  display: flex;
+  flex-direction: column;
+}
+
+.telemetry-hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.telemetry-section-label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 9px;
+  letter-spacing: 0.11em;
+  color: #58d8ff;
+}
+
+.telemetry-hero-top h2 {
+  margin: 0;
+}
+
+.telemetry-pipeline {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 28px 10px 18px;
+}
+
+.pipeline-node {
+  min-width: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+}
+
+.pipeline-node-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(77, 210, 255, 0.28);
+  background: rgba(0, 180, 255, 0.07);
+  color: #54d8ff;
+}
+
+.pipeline-node-icon.danger {
+  color: #ff6678;
+  border-color: rgba(255, 102, 120, 0.35);
+  background: rgba(255, 102, 120, 0.08);
+}
+
+.pipeline-node span {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #71869a;
+}
+
+.pipeline-node strong {
+  font-size: 10px;
+  color: #d8e5ec;
+}
+
+.pipeline-node strong.danger {
+  color: #ff6678;
+}
+
+.pipeline-line {
+  flex: 1;
+  min-width: 20px;
+  height: 1px;
+  background: rgba(73, 151, 190, 0.18);
+  position: relative;
+}
+
+.pipeline-line span {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 35%;
+  height: 5px;
+  border-radius: 10px;
+  background: #42d4ff;
+  box-shadow: 0 0 12px rgba(66, 212, 255, 0.65);
+  animation: netraPipelineFlow 2.4s linear infinite;
+}
+
+@keyframes netraPipelineFlow {
+  from {
+    transform: translateX(0);
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(170%);
+    opacity: 0.3;
+  }
+}
+
+.telemetry-hero-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 13px;
+  border-top: 1px solid rgba(73, 151, 190, 0.13);
+}
+
+.telemetry-hero-footer span {
+  max-width: 520px;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #71869a;
+}
+
+.telemetry-hero-footer strong {
+  align-self: center;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: #51dca7;
+  white-space: nowrap;
+}
+
+
+/* THREAT COMMAND CARD */
+
+.threat-command-card {
+  min-height: 235px;
+  display: flex;
+  flex-direction: column;
+}
+
+.threat-command-card.has-threat {
+  border-color: rgba(255, 82, 104, 0.28);
+}
+
+.threat-command-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.threat-command-heading > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.threat-command-heading span {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: #71869a;
+}
+
+.threat-command-heading h3 {
+  margin: 0;
+}
+
+.threat-command-heading > svg {
+  color: #ff6678;
+}
+
+.latest-threat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 20px;
+}
+
+.latest-threat-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.threat-live-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ff5268;
+  box-shadow: 0 0 12px rgba(255, 82, 104, 0.8);
+  animation: threatPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes threatPulse {
+  50% {
+    transform: scale(1.45);
+    opacity: 0.6;
+  }
+}
+
+.latest-threat-main small {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 8px;
+  color: #71869a;
+}
+
+.latest-threat-main strong {
+  display: block;
+  color: #ff7b89;
+  font-size: 16px;
+}
+
+.threat-confidence-box,
+.latest-threat-evidence {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 12px;
+  border: 1px solid rgba(255, 102, 120, 0.12);
+  background: rgba(255, 102, 120, 0.035);
+}
+
+.threat-confidence-box span,
+.latest-threat-evidence span {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #71869a;
+}
+
+.threat-confidence-box strong {
+  color: #ff7b89;
+}
+
+.latest-threat-evidence strong {
+  font-size: 10px;
+  color: #cbd7df;
+}
+
+.threat-clear-state {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #51dca7;
+}
+
+.threat-clear-state > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.threat-clear-state strong {
+  color: #d4e2ea;
+}
+
+.threat-clear-state span {
+  font-size: 10px;
+  line-height: 1.6;
+  color: #71869a;
+}
+
+
+/* METRICS */
+
+.telemetry-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.telemetry-metric-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 105px;
+}
+
+.telemetry-metric-card.metric-danger {
+  border-color: rgba(255, 82, 104, 0.22);
+}
+
+.telemetry-metric-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: rgba(0, 180, 255, 0.07);
+  color: #58d8ff;
+}
+
+.metric-danger .telemetry-metric-icon {
+  background: rgba(255, 82, 104, 0.08);
+  color: #ff6678;
+}
+
+.telemetry-metric-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.telemetry-metric-copy span {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #71869a;
+}
+
+.telemetry-metric-copy strong {
+  font-size: 20px;
+  color: #dce7ee;
+}
+
+.telemetry-metric-copy small {
+  font-size: 8px;
+  color: #64788a;
+}
+
+
+/* WORKSPACE */
+
+.telemetry-workspace-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(320px, 0.7fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.workspace-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.workspace-heading > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.workspace-heading span {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: #71869a;
+}
+
+.workspace-heading h3 {
+  margin: 0;
+}
+
+.workspace-meta {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row !important;
+}
+
+.workspace-meta > span:first-child {
+  padding: 4px 7px;
+  border: 1px solid rgba(78, 164, 202, 0.18);
+  color: #9bb2c2;
+}
+
+.workspace-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #45d9a1;
+  box-shadow: 0 0 8px rgba(69, 217, 161, 0.8);
+}
+
+.workspace-meta strong {
+  font-size: 8px;
+  color: #45d9a1;
+}
+
+.telemetry-flow-workspace {
+  min-width: 0;
+}
+
+.flow-row-threat {
+  background: rgba(255, 82, 104, 0.025);
+}
+
+.flow-state {
+  color: #91a3b0;
+}
+
+.telemetry-empty-state,
+.telemetry-clear-alert-state {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  color: #58d8ff;
+}
+
+.telemetry-clear-alert-state {
+  color: #51dca7;
+}
+
+.telemetry-empty-state strong,
+.telemetry-clear-alert-state strong {
+  color: #cddbe3;
+}
+
+.telemetry-empty-state span,
+.telemetry-clear-alert-state span {
+  max-width: 250px;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #71869a;
+}
+
+
+/* THREAT EVENT CARDS */
+
+.telemetry-alert-workspace {
+  min-width: 0;
+  border-color: rgba(255, 82, 104, 0.18);
+}
+
+.threat-event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.threat-event-card {
+  padding: 13px;
+  border: 1px solid rgba(255, 102, 120, 0.12);
+  background: rgba(255, 102, 120, 0.025);
+}
+
+.threat-event-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.threat-event-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.threat-event-title strong {
+  font-size: 11px;
+  color: #f0d9dc;
+}
+
+.threat-event-confidence {
+  font-size: 10px;
+  color: #51dca7;
+}
+
+.threat-event-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.threat-event-body span {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #71869a;
+}
+
+.threat-event-body strong {
+  font-size: 9px;
+  color: #a9bac6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.threat-event-evidence {
+  margin-top: 10px;
+  font-size: 9px;
+  color: #8294a2;
+}
+
+.threat-event-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(255, 102, 120, 0.1);
+}
+
+.threat-event-footer span {
+  font-size: 8px;
+  color: #71869a;
+}
+
+.threat-event-footer span:last-child {
+  color: #ff6678;
+}
+
+
+/* ANALYTICS */
+
+.telemetry-analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.telemetry-protocol-card,
+.telemetry-characteristics-card,
+.telemetry-engine-card {
+  min-height: 255px;
+}
+
+.telemetry-characteristics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.traffic-characteristic-item {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 11px;
+  padding: 10px;
+  border: 1px solid rgba(73, 151, 190, 0.12);
+  background: rgba(7, 18, 28, 0.38);
+}
+
+.traffic-characteristic-item > div {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 180, 255, 0.07);
+  color: #58d8ff;
+}
+
+.traffic-characteristic-item span {
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  color: #71869a;
+}
+
+.traffic-characteristic-item strong {
+  font-size: 10px;
+  color: #d5e1e8;
+  text-align: right;
+}
+
+
+/* ENGINE */
+
+.engine-analysis-content {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding-top: 14px;
+}
+
+.engine-status-orbit {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.engine-orbit-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(75, 215, 255, 0.25);
+}
+
+.engine-orbit-ring::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: -4px;
+  left: calc(50% - 4px);
+  background: #51dca7;
+  box-shadow: 0 0 10px rgba(81, 220, 167, 0.8);
+  animation: engineOrbit 4s linear infinite;
+  transform-origin: 4px 48px;
+}
+
+@keyframes engineOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.engine-orbit-core {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(81, 220, 167, 0.3);
+  background: rgba(81, 220, 167, 0.06);
+  color: #51dca7;
+}
+
+.engine-analysis-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.engine-analysis-copy > strong {
+  font-size: 10px;
+  color: #51dca7;
+}
+
+.engine-analysis-copy > span {
+  font-size: 10px;
+  line-height: 1.6;
+  color: #71869a;
+}
+
+.engine-analysis-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.engine-analysis-meta span {
+  font-size: 8px;
+  color: #91a4b2;
+}
+
+.engine-analysis-meta i {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #51dca7;
+}
+
+
+/* FOOTER */
+
+.telemetry-page-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #536878;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+
+  .telemetry-status-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .telemetry-analytics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .telemetry-engine-card {
+    grid-column: 1 / -1;
+  }
+
+}
+
+@media (max-width: 1050px) {
+
+  .telemetry-command-header {
+    flex-direction: column;
+  }
+
+  .telemetry-overview-grid,
+  .telemetry-workspace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telemetry-alert-workspace {
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .command-header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .telemetry-status-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .status-signal:nth-child(2n) {
+    border-right: none;
+  }
+
+  .telemetry-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .telemetry-analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telemetry-engine-card {
+    grid-column: auto;
+  }
+
+  .telemetry-pipeline {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .pipeline-line {
+    min-width: 25px;
+  }
+
+  .telemetry-page-footer {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .command-header-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .telemetry-last-update {
+    justify-content: center;
+  }
+
+  .telemetry-status-bar,
+  .telemetry-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-signal {
+    border-right: none;
+    border-bottom: 1px solid rgba(70, 137, 170, 0.14);
+  }
+
+  .status-signal:last-child {
+    border-bottom: none;
+  }
+
+  .telemetry-hero-footer {
+    flex-direction: column;
+  }
+
+  .telemetry-pipeline {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+/* =====================================================
+   NETRA SOC LAYOUT CLEANUP
+   CARD HEIGHT + SPACING OPTIMIZATION
+===================================================== */
+
+/* Reduce excessive empty space in metric cards */
+.telemetry-metric-card {
+  min-height: 88px !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+
+/* Keep overview cards compact and aligned */
+.telemetry-hero-card,
+.threat-command-card {
+  min-height: 215px !important;
+}
+
+/* Reduce unnecessary vertical whitespace */
+.telemetry-overview-grid {
+  margin-bottom: 14px !important;
+}
+
+/* Tighter workspace spacing */
+.telemetry-workspace-grid {
+  margin-bottom: 14px !important;
+}
+
+/* Better analytics card height */
+.telemetry-protocol-card,
+.telemetry-characteristics-card,
+.telemetry-engine-card {
+  min-height: 225px !important;
+}
+
+/* Remove excessive internal bottom spacing */
+.telemetry-analytics-grid {
+  margin-bottom: 8px;
+}
+
+/* Compact telemetry pipeline */
+.telemetry-pipeline {
+  padding-top: 20px !important;
+  padding-bottom: 14px !important;
+}
+
+/* Make pipeline nodes visually tighter */
+.pipeline-node {
+  gap: 5px !important;
+}
+
+/* Compact threat intelligence content */
+.latest-threat {
+  padding-top: 14px !important;
+  gap: 10px !important;
+}
+
+/* Compact network workspace */
+.telemetry-flow-workspace,
+.telemetry-alert-workspace {
+  min-height: auto !important;
+}
+
+/* Prevent unnecessary card stretching */
+.monitor-card {
+  min-height: 0;
+}
+
+/* Better bottom spacing */
+.telemetry-command-page {
+  padding-bottom: 12px !important;
+}
+
+/* Footer cleanup */
+.telemetry-page-footer {
+  margin-top: 10px !important;
+  padding-top: 8px;
+  border-top: 1px solid rgba(73, 151, 190, 0.10);
+}
+
+
+/* =====================================================
+   COMPACT THREAT DETECTION CARDS
+===================================================== */
+
+.threat-event-list {
+  gap: 8px !important;
+}
+
+.threat-event-card {
+  padding: 10px 12px !important;
+  min-height: auto !important;
+}
+
+.threat-event-top {
+  margin-bottom: 6px !important;
+}
+
+.threat-event-footer {
+  margin-top: 4px !important;
+  padding-top: 6px !important;
+}
+
+
+/* =====================================================
+   COMPACT NETWORK CONNECTION WORKSPACE
+===================================================== */
+
+/* Reduce heading spacing */
+.telemetry-workspace-grid .workspace-heading {
+  margin-bottom: 10px !important;
+}
+
+/* Compact network table */
+.telemetry-flow-workspace .live-flow-header {
+  padding: 9px 10px !important;
+}
+
+.telemetry-flow-workspace .live-flow-row {
+  padding: 8px 10px !important;
+  min-height: 38px !important;
+}
+
+/* Smaller table text for SOC density */
+.telemetry-flow-workspace .live-flow-header {
+  font-size: 8px !important;
+}
+
+.telemetry-flow-workspace .live-flow-row {
+  font-size: 9px !important;
+}
+
+/* Reduce table cell spacing */
+.telemetry-flow-workspace .live-flow-header,
+.telemetry-flow-workspace .live-flow-row {
+  gap: 10px !important;
+}
+
+/* Compact protocol and risk chips */
+.telemetry-flow-workspace .protocol-chip {
+  padding: 3px 7px !important;
+  font-size: 8px !important;
+}
+
+.telemetry-flow-workspace .flow-status {
+  padding: 4px 7px !important;
+  font-size: 8px !important;
+}
+
+/* Prevent unnecessary workspace stretching */
+.telemetry-flow-workspace {
+  padding-bottom: 10px !important;
+}
+
+
+/* =====================================================
+   FINAL ANALYTICS ALIGNMENT POLISH
+===================================================== */
+
+/* Keep analytics cards visually consistent */
+.telemetry-analytics-grid .monitor-card {
+  padding: 14px !important;
+}
+
+/* Consistent analytics heading spacing */
+.telemetry-analytics-grid .workspace-heading {
+  margin-bottom: 10px !important;
+}
+
+/* Keep analytics content compact */
+.protocol-distribution,
+.flow-characteristics {
+  gap: 8px !important;
+}
+
+/* Improve visual balance inside analytics cards */
+.protocol-row {
+  margin-bottom: 8px !important;
+}
+
+/* Prevent excessive empty vertical stretching */
+.telemetry-protocol-card,
+.telemetry-characteristics-card,
+.telemetry-engine-card {
+  height: auto !important;
+}
+
+/* Clean separation before footer */
+.telemetry-page-footer {
+  opacity: 0.7;
+  font-size: 8px !important;
+}
+
+
+/* =====================================================
+   PREVENT THREAT PANEL FROM STRETCHING
+===================================================== */
+
+.telemetry-workspace-grid {
+  align-items: start !important;
+}
+
+.telemetry-alert-workspace {
+  align-self: start !important;
+  height: fit-content !important;
+}
+

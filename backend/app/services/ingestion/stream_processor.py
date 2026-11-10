@@ -10,6 +10,12 @@ from .feature_extractor import safe_ratio
 from .flow_normalizer import NetraFlow
 from app.services.alert_service import create_behavioral_alert
 
+# Known infrastructure services that commonly generate legitimate
+# periodic traffic. Periodicity alone should not classify these
+# connections as BOT_C2.
+BENIGN_PERIODIC_SERVICES = {
+    ("udp", 123): "NTP",
+}
 
 @dataclass
 class DetectionResult:
@@ -268,13 +274,57 @@ class BehavioralDetector:
         flow: NetraFlow,
         state: SlidingWindowState,
     ) -> DetectionResult:
-        events = list(state.source_events.get(flow.src_ip, ()))
+        protocol = str(flow.protocol or "").lower()
+
+        service_key = (
+            protocol,
+            int(flow.dst_port),
+        )
+
+        benign_service = BENIGN_PERIODIC_SERVICES.get(
+            service_key
+        )
+
+        # Compare flows using destination IP + destination port +
+        # protocol. This prevents unrelated services on the same host
+        # from being combined into one beaconing pattern.
+        events = list(
+            state.source_events.get(
+                flow.src_ip,
+                (),
+            )
+        )
 
         same_destination = [
             item
             for item in events
-            if item.dst_ip == flow.dst_ip
+            if (
+                item.dst_ip == flow.dst_ip
+                and int(item.dst_port) == int(flow.dst_port)
+                and str(item.protocol or "").lower() == protocol
+            )
         ]
+
+        # Known legitimate periodic infrastructure traffic should not
+        # trigger BOT_C2 based on periodicity alone.
+        if benign_service:
+            return DetectionResult(
+                detector="c2_beacon_periodicity",
+                threat_class="BOT_C2",
+                score=0.0,
+                triggered=False,
+                evidence={
+                    "event_count": len(same_destination),
+                    "destination": flow.dst_ip,
+                    "destination_port": flow.dst_port,
+                    "protocol": protocol,
+                    "benign_service": benign_service,
+                    "suppressed_reason": (
+                        "known_legitimate_periodic_service"
+                    ),
+                    "periodicity_cv": None,
+                },
+            )
 
         if len(same_destination) < self.beacon_min_events:
             return DetectionResult(
@@ -286,6 +336,8 @@ class BehavioralDetector:
                     "event_count": len(same_destination),
                     "periodicity_cv": None,
                     "destination": flow.dst_ip,
+                    "destination_port": flow.dst_port,
+                    "protocol": protocol,
                 },
             )
 
@@ -296,7 +348,10 @@ class BehavioralDetector:
 
         intervals = [
             b - a
-            for a, b in zip(timestamps, timestamps[1:])
+            for a, b in zip(
+                timestamps,
+                timestamps[1:],
+            )
             if b > a
         ]
 
@@ -310,17 +365,26 @@ class BehavioralDetector:
                     "event_count": len(same_destination),
                     "periodicity_cv": None,
                     "destination": flow.dst_ip,
+                    "destination_port": flow.dst_port,
+                    "protocol": protocol,
                 },
             )
 
-        mean_interval = sum(intervals) / len(intervals)
+        mean_interval = (
+            sum(intervals)
+            / len(intervals)
+        )
 
-        variance = sum(
-            (interval - mean_interval) ** 2
-            for interval in intervals
-        ) / len(intervals)
+        variance = (
+            sum(
+                (interval - mean_interval) ** 2
+                for interval in intervals
+            )
+            / len(intervals)
+        )
 
         stddev = variance ** 0.5
+
         coefficient_of_variation = safe_ratio(
             stddev,
             mean_interval,
@@ -332,21 +396,36 @@ class BehavioralDetector:
         )
 
         triggered = (
-            len(same_destination) >= self.beacon_min_events
+            len(same_destination)
+            >= self.beacon_min_events
             and coefficient_of_variation <= 0.20
         )
 
         return DetectionResult(
             detector="c2_beacon_periodicity",
             threat_class="BOT_C2",
-            score=round(periodicity_score * 100, 2),
+            score=round(
+                periodicity_score * 100,
+                2,
+            ),
             triggered=triggered,
             evidence={
                 "event_count": len(same_destination),
                 "destination": flow.dst_ip,
-                "mean_interarrival_seconds": round(mean_interval, 4),
-                "interarrival_stddev": round(stddev, 4),
-                "periodicity_cv": round(coefficient_of_variation, 4),
+                "destination_port": flow.dst_port,
+                "protocol": protocol,
+                "mean_interarrival_seconds": round(
+                    mean_interval,
+                    4,
+                ),
+                "interarrival_stddev": round(
+                    stddev,
+                    4,
+                ),
+                "periodicity_cv": round(
+                    coefficient_of_variation,
+                    4,
+                ),
                 "window_seconds": self.window_seconds,
             },
         )

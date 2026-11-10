@@ -1,20 +1,19 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes import threat
-from app.routes import stream
 from app.routes import analytics
+from app.routes import stream
+from app.routes import threat
+from app.routes import live
 
 
-# Create FastAPI application
 app = FastAPI(
     title="NETRA API",
     version="1.0.0",
-    description="Network Threat Recognition and Analytics Platform"
+    description="NETRA Passive AI-Based Network Threat Detection System",
 )
 
 
-# Allow React frontend to communicate with FastAPI backend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -27,23 +26,23 @@ app.add_middleware(
 )
 
 
-# Include API routes
-app.include_router(threat.router)
-app.include_router(stream.router)
 app.include_router(analytics.router)
+app.include_router(stream.router)
+app.include_router(threat.router)
+app.include_router(live.router)
 
 
-# Root endpoint
 @app.get("/")
 def root():
     return {
-        "message": "NETRA API is running"
+        "message": "NETRA Backend API Running",
+        "status": "healthy",
     }
 
 
-# Health check endpoint
 @app.get("/health")
 def health_check():
     return {
-        "status": "healthy"
+        "status": "healthy",
     }
+

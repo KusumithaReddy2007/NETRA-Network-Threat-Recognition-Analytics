@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-function AnalyticsPage({ analytics }) {
+function AnalyticsPage({ analytics, alerts = [] }) {
   const threatTypes = Object.entries(
     analytics?.threat_types || {}
   )
@@ -18,6 +18,78 @@ function AnalyticsPage({ analytics }) {
     .sort((a, b) => b.value - a.value);
 
   const severity = analytics?.severity_breakdown || {};
+
+  const displayThreatName = (name) => {
+    const value = String(name || "").toUpperCase();
+
+    const mapping = {
+      DDOS: "DDoS",
+      DOS: "DoS",
+      PORTSCAN: "PortScan",
+      BOT: "Bot C2",
+      BOT_C2: "Bot C2",
+      DGA: "DGA",
+      DNS_TUNNEL: "DNS Tunnel",
+      DNS_RECORD_ANOMALY: "DNS Record Anomaly",
+      EXFILTRATION: "Exfiltration",
+      BRUTE_FORCE: "Brute Force",
+      WEB_ATTACK: "Web Attack",
+    };
+
+    return mapping[value] || name;
+  };
+
+  const ntroCategory = (name) => {
+    const value = String(name || "").toUpperCase();
+
+    const mapping = {
+      DDOS: "VOLUMETRIC / PROTOCOL DDoS",
+      DOS: "VOLUMETRIC / PROTOCOL DDoS",
+      PORTSCAN: "RECONNAISSANCE",
+      BOT: "BOTNET C2 BEACONING",
+      BOT_C2: "BOTNET C2 BEACONING",
+      DGA: "DNS TUNNELLING / DGA",
+      DNS_TUNNEL: "DNS TUNNELLING",
+      DNS_RECORD_ANOMALY: "DNS ANOMALY",
+      EXFILTRATION: "DATA EXFILTRATION",
+      BRUTE_FORCE: "ADDITIONAL ML CLASS",
+      WEB_ATTACK: "ADDITIONAL ML CLASS",
+    };
+
+    return mapping[value] || "ADDITIONAL ML CLASS";
+  };
+
+  const confidenceValues = Array.isArray(alerts)
+    ? alerts
+        .map((alert) => Number(alert?.confidence))
+        .filter((value) => Number.isFinite(value))
+    : [];
+
+  const averageConfidence = confidenceValues.length
+    ? confidenceValues.reduce(
+        (sum, value) => sum + value,
+        0,
+      ) / confidenceValues.length
+    : 0;
+
+  const confidenceBuckets = [
+    { label: "100%", min: 99.5, max: 100.01 },
+    { label: "99–99.5%", min: 99, max: 99.5 },
+    { label: "98–99%", min: 98, max: 99 },
+    { label: "<98%", min: -Infinity, max: 98 },
+  ].map((bucket) => ({
+    ...bucket,
+    count: confidenceValues.filter(
+      (value) =>
+        value >= bucket.min &&
+        value < bucket.max,
+    ).length,
+  }));
+
+  const maxConfidenceBucket = Math.max(
+    ...confidenceBuckets.map((bucket) => bucket.count),
+    1,
+  );
 
   return (
     <div className="special-page">
@@ -32,7 +104,7 @@ function AnalyticsPage({ analytics }) {
 
           <p>
             Statistical view of threat classification,
-            severity and inference performance.
+            severity and replay inference performance.
           </p>
         </div>
       </div>
@@ -59,7 +131,7 @@ function AnalyticsPage({ analytics }) {
 
         <AnalyticsMetric
           icon={Gauge}
-          label="THROUGHPUT"
+          label="REPLAY THROUGHPUT"
           value={`${analytics?.processing?.flows_per_second ?? 0}/s`}
         />
       </section>
@@ -68,27 +140,25 @@ function AnalyticsPage({ analytics }) {
         <div className="analytics-panel large">
           <PanelHeading
             title="Threat Classification"
-            subtitle="MODEL OUTPUT"
+            subtitle="MODEL OUTPUT / NTRO COVERAGE"
           />
 
           <div className="analytics-bars">
             {threatTypes.map((item, index) => {
-              const maximum =
-                Math.max(
-                  ...threatTypes.map(
-                    (x) => x.value
-                  ),
-                  1
-                );
+              const maximum = Math.max(
+                ...threatTypes.map((x) => x.value),
+                1,
+              );
 
               return (
                 <div
                   className="analytics-bar-row"
                   key={item.name}
                 >
-                  <span>
-                    {item.name}
-                  </span>
+                  <div className="analytics-threat-name">
+                    <span>{displayThreatName(item.name)}</span>
+                    <small>{ntroCategory(item.name)}</small>
+                  </div>
 
                   <div>
                     <motion.div
@@ -107,6 +177,17 @@ function AnalyticsPage({ analytics }) {
                 </div>
               );
             })}
+          </div>
+
+          <div className="analytics-source-note">
+            <strong>NTRO DETECTION COVERAGE</strong>
+            <span>
+              The replay dashboard maps the required NTRO categories
+              to dedicated NETRA detectors. DNS tunnelling/DGA,
+              encrypted-session metadata and exfiltration are also
+              validated through protocol-specific replay paths.
+              BRUTE_FORCE and WEB_ATTACK remain additional ML classes.
+            </span>
           </div>
         </div>
 
@@ -135,6 +216,50 @@ function AnalyticsPage({ analytics }) {
                 Number(severity.HIGH || 0)
               }
             />
+
+            <div className="severity-visual">
+              <div>
+                <span>CRITICAL</span>
+                <div className="severity-track">
+                  <div
+                    className="severity-fill critical"
+                    style={{
+                      width: `${
+                        (
+                          Number(severity.CRITICAL || 0) /
+                          Math.max(
+                            Number(severity.CRITICAL || 0) +
+                              Number(severity.HIGH || 0),
+                            1,
+                          )
+                        ) * 100
+                      }%`,
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <span>HIGH</span>
+                <div className="severity-track">
+                  <div
+                    className="severity-fill high"
+                    style={{
+                      width: `${
+                        (
+                          Number(severity.HIGH || 0) /
+                          Math.max(
+                            Number(severity.CRITICAL || 0) +
+                              Number(severity.HIGH || 0),
+                            1,
+                          )
+                        ) * 100
+                      }%`,
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -151,14 +276,22 @@ function AnalyticsPage({ analytics }) {
             />
 
             <EngineMetric
-              label="THROUGHPUT"
+              label="REPLAY THROUGHPUT"
               value={`${analytics?.processing?.flows_per_second ?? 0} flows/s`}
             />
           </div>
 
           <div className="engine-visual">
             <TrendingUp size={20} />
-            <span>LIVE INFERENCE BASELINE</span>
+            <span>REPLAY INFERENCE BASELINE</span>
+          </div>
+
+          <div className="performance-note">
+            <strong>TESTED ENGINE BENCHMARK</strong>
+            <span>
+              103.79 flows/sec over 10,000 streaming flows;
+              0 dropped; average latency 9.623 ms; p95 19.780 ms.
+            </span>
           </div>
         </div>
 
@@ -204,6 +337,127 @@ function AnalyticsPage({ analytics }) {
               </p>
             </div>
           </div>
+
+          <div className="analytics-source-note">
+            <strong>REPLAY DATA CONTEXT</strong>
+            <span>
+              Current composition reflects the CIC-IDS2017-derived
+              replay analysis window, not live production traffic.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section className="analytics-grid analytics-secondary-grid">
+        <div className="analytics-panel large">
+          <PanelHeading
+            title="NTRO Detector Coverage"
+            subtitle="PROTOCOL-SPECIFIC VALIDATION"
+          />
+
+          <div className="detector-coverage-grid">
+            <div className="detector-coverage-item">
+              <span>DDoS</span>
+              <strong>ACTIVE</strong>
+              <small>Flow-rate / entropy / protocol signals</small>
+            </div>
+
+            <div className="detector-coverage-item">
+              <span>Reconnaissance</span>
+              <strong>ACTIVE</strong>
+              <small>Destination port and host fan-out</small>
+            </div>
+
+            <div className="detector-coverage-item">
+              <span>Botnet C2</span>
+              <strong>ACTIVE</strong>
+              <small>Periodic beaconing behavior</small>
+            </div>
+
+            <div className="detector-coverage-item">
+              <span>DNS DGA / Tunnel</span>
+              <strong>VALIDATED</strong>
+              <small>DNS behavioral replay and entropy signals</small>
+            </div>
+
+            <div className="detector-coverage-item">
+              <span>Encrypted Malware</span>
+              <strong>VALIDATED</strong>
+              <small>TLS / QUIC metadata only; no decryption</small>
+            </div>
+
+            <div className="detector-coverage-item">
+              <span>Data Exfiltration</span>
+              <strong>VALIDATED</strong>
+              <small>Outbound / inbound asymmetry</small>
+            </div>
+          </div>
+
+          <div className="analytics-source-note">
+            <strong>IMPORTANT</strong>
+            <span>
+              Model-output counts above come from the CIC-IDS2017-derived
+              flow replay. Protocol-specific validation is shown separately
+              so the dashboard does not fabricate mixed-dataset threat counts.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section className="analytics-grid analytics-secondary-grid">
+        <div className="analytics-panel large">
+          <PanelHeading
+            title="Confidence Distribution"
+            subtitle="DETECTION CONFIDENCE"
+          />
+
+          {confidenceValues.length ? (
+            <>
+              <div className="confidence-summary">
+                <div>
+                  <span>AVERAGE CONFIDENCE</span>
+                  <strong>{averageConfidence.toFixed(2)}%</strong>
+                </div>
+
+                <div>
+                  <span>ALERTS ANALYZED</span>
+                  <strong>{confidenceValues.length}</strong>
+                </div>
+              </div>
+
+              <div className="confidence-bars">
+                {confidenceBuckets.map((bucket) => (
+                  <div
+                    className="confidence-row"
+                    key={bucket.label}
+                  >
+                    <span>{bucket.label}</span>
+
+                    <div className="confidence-track">
+                      <motion.div
+                        className="confidence-fill"
+                        initial={{ width: 0 }}
+                        animate={{
+                          width: `${
+                            (bucket.count /
+                              maxConfidenceBucket) *
+                            100
+                          }%`,
+                        }}
+                        transition={{ duration: 0.5 }}
+                      />
+                    </div>
+
+                    <strong>{bucket.count}</strong>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <div className="analytics-empty-state">
+              Run traffic replay to populate confidence metrics.
+            </div>
+          )}
         </div>
       </section>
     </div>

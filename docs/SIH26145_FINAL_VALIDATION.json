@@ -1,7 +1,7 @@
 {
   "project": "NETRA",
   "problem_statement": "SIH26145",
-  "generated_utc": "2026-09-06T09:41:50.033644+00:00",
+  "generated_utc": "2026-09-14T11:43:37.212068+00:00",
   "behavioral_validation": [
     {
       "name": "DDoS behavioral test",
@@ -10,7 +10,7 @@
       "matching_detections": [
         {
           "flow_id": "DDOS-999",
-          "timestamp": 1788687542.5429075,
+          "timestamp": 1789385844.5926354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -25,7 +25,7 @@
         },
         {
           "flow_id": "DDOS-1000",
-          "timestamp": 1788687542.5436075,
+          "timestamp": 1789385844.5933354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -40,7 +40,7 @@
         },
         {
           "flow_id": "DDOS-1001",
-          "timestamp": 1788687542.5449076,
+          "timestamp": 1789385844.5946355,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -55,7 +55,7 @@
         },
         {
           "flow_id": "DDOS-1002",
-          "timestamp": 1788687542.5458076,
+          "timestamp": 1789385844.5955355,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -70,7 +70,7 @@
         },
         {
           "flow_id": "DDOS-1003",
-          "timestamp": 1788687542.5475075,
+          "timestamp": 1789385844.5972354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -85,7 +85,7 @@
         },
         {
           "flow_id": "DDOS-1004",
-          "timestamp": 1788687542.5483074,
+          "timestamp": 1789385844.5980353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -100,7 +100,7 @@
         },
         {
           "flow_id": "DDOS-1005",
-          "timestamp": 1788687542.5490074,
+          "timestamp": 1789385844.5987353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -115,7 +115,7 @@
         },
         {
           "flow_id": "DDOS-1006",
-          "timestamp": 1788687542.5503075,
+          "timestamp": 1789385844.6000354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -130,7 +130,7 @@
         },
         {
           "flow_id": "DDOS-1007",
-          "timestamp": 1788687542.5512075,
+          "timestamp": 1789385844.6009355,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -145,7 +145,7 @@
         },
         {
           "flow_id": "DDOS-1008",
-          "timestamp": 1788687542.5529075,
+          "timestamp": 1789385844.6026354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -160,7 +160,7 @@
         },
         {
           "flow_id": "DDOS-1009",
-          "timestamp": 1788687542.5537074,
+          "timestamp": 1789385844.6034353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -175,7 +175,7 @@
         },
         {
           "flow_id": "DDOS-1010",
-          "timestamp": 1788687542.5544074,
+          "timestamp": 1789385844.6041353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -190,7 +190,7 @@
         },
         {
           "flow_id": "DDOS-1011",
-          "timestamp": 1788687542.5557075,
+          "timestamp": 1789385844.6054354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -205,7 +205,7 @@
         },
         {
           "flow_id": "DDOS-1012",
-          "timestamp": 1788687542.5566075,
+          "timestamp": 1789385844.6063354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -220,7 +220,7 @@
         },
         {
           "flow_id": "DDOS-1013",
-          "timestamp": 1788687542.5583074,
+          "timestamp": 1789385844.6080353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -235,7 +235,7 @@
         },
         {
           "flow_id": "DDOS-1014",
-          "timestamp": 1788687542.5591073,
+          "timestamp": 1789385844.6088352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -250,7 +250,7 @@
         },
         {
           "flow_id": "DDOS-1015",
-          "timestamp": 1788687542.5598073,
+          "timestamp": 1789385844.6095352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -265,7 +265,7 @@
         },
         {
           "flow_id": "DDOS-1016",
-          "timestamp": 1788687542.5611074,
+          "timestamp": 1789385844.6108353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -280,7 +280,7 @@
         },
         {
           "flow_id": "DDOS-1017",
-          "timestamp": 1788687542.5620074,
+          "timestamp": 1789385844.6117353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -295,7 +295,7 @@
         },
         {
           "flow_id": "DDOS-1018",
-          "timestamp": 1788687542.5637074,
+          "timestamp": 1789385844.6134353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -310,7 +310,7 @@
         },
         {
           "flow_id": "DDOS-1019",
-          "timestamp": 1788687542.5645072,
+          "timestamp": 1789385844.6142352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -325,7 +325,7 @@
         },
         {
           "flow_id": "DDOS-1020",
-          "timestamp": 1788687542.5652072,
+          "timestamp": 1789385844.6149352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -340,7 +340,7 @@
         },
         {
           "flow_id": "DDOS-1021",
-          "timestamp": 1788687542.5665073,
+          "timestamp": 1789385844.6162353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -355,7 +355,7 @@
         },
         {
           "flow_id": "DDOS-1022",
-          "timestamp": 1788687542.5674074,
+          "timestamp": 1789385844.6171353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -370,7 +370,7 @@
         },
         {
           "flow_id": "DDOS-1023",
-          "timestamp": 1788687542.5691073,
+          "timestamp": 1789385844.6188352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -385,7 +385,7 @@
         },
         {
           "flow_id": "DDOS-1024",
-          "timestamp": 1788687542.5699072,
+          "timestamp": 1789385844.619635,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -400,7 +400,7 @@
         },
         {
           "flow_id": "DDOS-1025",
-          "timestamp": 1788687542.5706072,
+          "timestamp": 1789385844.620335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -415,7 +415,7 @@
         },
         {
           "flow_id": "DDOS-1026",
-          "timestamp": 1788687542.5719073,
+          "timestamp": 1789385844.6216352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -430,7 +430,7 @@
         },
         {
           "flow_id": "DDOS-1027",
-          "timestamp": 1788687542.5728073,
+          "timestamp": 1789385844.6225352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -445,7 +445,7 @@
         },
         {
           "flow_id": "DDOS-1028",
-          "timestamp": 1788687542.5745072,
+          "timestamp": 1789385844.6242352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -460,7 +460,7 @@
         },
         {
           "flow_id": "DDOS-1029",
-          "timestamp": 1788687542.5753071,
+          "timestamp": 1789385844.625035,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -475,7 +475,7 @@
         },
         {
           "flow_id": "DDOS-1030",
-          "timestamp": 1788687542.5760071,
+          "timestamp": 1789385844.625735,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -490,7 +490,7 @@
         },
         {
           "flow_id": "DDOS-1031",
-          "timestamp": 1788687542.5773072,
+          "timestamp": 1789385844.6270351,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -505,7 +505,7 @@
         },
         {
           "flow_id": "DDOS-1032",
-          "timestamp": 1788687542.5782073,
+          "timestamp": 1789385844.6279352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -520,7 +520,7 @@
         },
         {
           "flow_id": "DDOS-1033",
-          "timestamp": 1788687542.5799072,
+          "timestamp": 1789385844.629635,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -535,7 +535,7 @@
         },
         {
           "flow_id": "DDOS-1034",
-          "timestamp": 1788687542.580707,
+          "timestamp": 1789385844.630435,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -550,7 +550,7 @@
         },
         {
           "flow_id": "DDOS-1035",
-          "timestamp": 1788687542.581407,
+          "timestamp": 1789385844.631135,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -565,7 +565,7 @@
         },
         {
           "flow_id": "DDOS-1036",
-          "timestamp": 1788687542.5827072,
+          "timestamp": 1789385844.632435,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -580,7 +580,7 @@
         },
         {
           "flow_id": "DDOS-1037",
-          "timestamp": 1788687542.5836072,
+          "timestamp": 1789385844.633335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -595,7 +595,7 @@
         },
         {
           "flow_id": "DDOS-1038",
-          "timestamp": 1788687542.5853071,
+          "timestamp": 1789385844.635035,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -610,7 +610,7 @@
         },
         {
           "flow_id": "DDOS-1039",
-          "timestamp": 1788687542.586107,
+          "timestamp": 1789385844.635835,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -625,7 +625,7 @@
         },
         {
           "flow_id": "DDOS-1040",
-          "timestamp": 1788687542.586807,
+          "timestamp": 1789385844.636535,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -640,7 +640,7 @@
         },
         {
           "flow_id": "DDOS-1041",
-          "timestamp": 1788687542.588107,
+          "timestamp": 1789385844.637835,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -655,7 +655,7 @@
         },
         {
           "flow_id": "DDOS-1042",
-          "timestamp": 1788687542.5890071,
+          "timestamp": 1789385844.638735,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -670,7 +670,7 @@
         },
         {
           "flow_id": "DDOS-1043",
-          "timestamp": 1788687542.590707,
+          "timestamp": 1789385844.640435,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -685,7 +685,7 @@
         },
         {
           "flow_id": "DDOS-1044",
-          "timestamp": 1788687542.591507,
+          "timestamp": 1789385844.6412349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -700,7 +700,7 @@
         },
         {
           "flow_id": "DDOS-1045",
-          "timestamp": 1788687542.592207,
+          "timestamp": 1789385844.6419349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -715,7 +715,7 @@
         },
         {
           "flow_id": "DDOS-1046",
-          "timestamp": 1788687542.593507,
+          "timestamp": 1789385844.643235,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -730,7 +730,7 @@
         },
         {
           "flow_id": "DDOS-1047",
-          "timestamp": 1788687542.594407,
+          "timestamp": 1789385844.644135,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -745,7 +745,7 @@
         },
         {
           "flow_id": "DDOS-1048",
-          "timestamp": 1788687542.596107,
+          "timestamp": 1789385844.645835,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -760,7 +760,7 @@
         },
         {
           "flow_id": "DDOS-1049",
-          "timestamp": 1788687542.596907,
+          "timestamp": 1789385844.6466348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -775,7 +775,7 @@
         },
         {
           "flow_id": "DDOS-1050",
-          "timestamp": 1788687542.597607,
+          "timestamp": 1789385844.6473348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -790,7 +790,7 @@
         },
         {
           "flow_id": "DDOS-1051",
-          "timestamp": 1788687542.598907,
+          "timestamp": 1789385844.648635,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -805,7 +805,7 @@
         },
         {
           "flow_id": "DDOS-1052",
-          "timestamp": 1788687542.599807,
+          "timestamp": 1789385844.649535,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -820,7 +820,7 @@
         },
         {
           "flow_id": "DDOS-1053",
-          "timestamp": 1788687542.601507,
+          "timestamp": 1789385844.6512349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -835,7 +835,7 @@
         },
         {
           "flow_id": "DDOS-1054",
-          "timestamp": 1788687542.6023068,
+          "timestamp": 1789385844.6520348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -850,7 +850,7 @@
         },
         {
           "flow_id": "DDOS-1055",
-          "timestamp": 1788687542.6030068,
+          "timestamp": 1789385844.6527348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -865,7 +865,7 @@
         },
         {
           "flow_id": "DDOS-1056",
-          "timestamp": 1788687542.604307,
+          "timestamp": 1789385844.6540349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -880,7 +880,7 @@
         },
         {
           "flow_id": "DDOS-1057",
-          "timestamp": 1788687542.605207,
+          "timestamp": 1789385844.654935,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -895,7 +895,7 @@
         },
         {
           "flow_id": "DDOS-1058",
-          "timestamp": 1788687542.606907,
+          "timestamp": 1789385844.6566348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -910,7 +910,7 @@
         },
         {
           "flow_id": "DDOS-1059",
-          "timestamp": 1788687542.6077068,
+          "timestamp": 1789385844.6574347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -925,7 +925,7 @@
         },
         {
           "flow_id": "DDOS-1060",
-          "timestamp": 1788687542.6084068,
+          "timestamp": 1789385844.6581347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -940,7 +940,7 @@
         },
         {
           "flow_id": "DDOS-1061",
-          "timestamp": 1788687542.6097069,
+          "timestamp": 1789385844.6594348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -955,7 +955,7 @@
         },
         {
           "flow_id": "DDOS-1062",
-          "timestamp": 1788687542.610607,
+          "timestamp": 1789385844.6603348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -970,7 +970,7 @@
         },
         {
           "flow_id": "DDOS-1063",
-          "timestamp": 1788687542.6123068,
+          "timestamp": 1789385844.6620347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -985,7 +985,7 @@
         },
         {
           "flow_id": "DDOS-1064",
-          "timestamp": 1788687542.6131067,
+          "timestamp": 1789385844.6628346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1000,7 +1000,7 @@
         },
         {
           "flow_id": "DDOS-1065",
-          "timestamp": 1788687542.6138067,
+          "timestamp": 1789385844.6635346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1015,7 +1015,7 @@
         },
         {
           "flow_id": "DDOS-1066",
-          "timestamp": 1788687542.6151068,
+          "timestamp": 1789385844.6648347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1030,7 +1030,7 @@
         },
         {
           "flow_id": "DDOS-1067",
-          "timestamp": 1788687542.6160069,
+          "timestamp": 1789385844.6657348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1045,7 +1045,7 @@
         },
         {
           "flow_id": "DDOS-1068",
-          "timestamp": 1788687542.6177068,
+          "timestamp": 1789385844.6674347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1060,7 +1060,7 @@
         },
         {
           "flow_id": "DDOS-1069",
-          "timestamp": 1788687542.6185067,
+          "timestamp": 1789385844.6682346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1075,7 +1075,7 @@
         },
         {
           "flow_id": "DDOS-1070",
-          "timestamp": 1788687542.6192067,
+          "timestamp": 1789385844.6689346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1090,7 +1090,7 @@
         },
         {
           "flow_id": "DDOS-1071",
-          "timestamp": 1788687542.6205068,
+          "timestamp": 1789385844.6702347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1105,7 +1105,7 @@
         },
         {
           "flow_id": "DDOS-1072",
-          "timestamp": 1788687542.6214068,
+          "timestamp": 1789385844.6711347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1120,7 +1120,7 @@
         },
         {
           "flow_id": "DDOS-1073",
-          "timestamp": 1788687542.6231067,
+          "timestamp": 1789385844.6728346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1135,7 +1135,7 @@
         },
         {
           "flow_id": "DDOS-1074",
-          "timestamp": 1788687542.6239066,
+          "timestamp": 1789385844.6736345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1150,7 +1150,7 @@
         },
         {
           "flow_id": "DDOS-1075",
-          "timestamp": 1788687542.6246066,
+          "timestamp": 1789385844.6743345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1165,7 +1165,7 @@
         },
         {
           "flow_id": "DDOS-1076",
-          "timestamp": 1788687542.6259067,
+          "timestamp": 1789385844.6756346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1180,7 +1180,7 @@
         },
         {
           "flow_id": "DDOS-1077",
-          "timestamp": 1788687542.6268067,
+          "timestamp": 1789385844.6765347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1195,7 +1195,7 @@
         },
         {
           "flow_id": "DDOS-1078",
-          "timestamp": 1788687542.6285067,
+          "timestamp": 1789385844.6782346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1210,7 +1210,7 @@
         },
         {
           "flow_id": "DDOS-1079",
-          "timestamp": 1788687542.6293066,
+          "timestamp": 1789385844.6790345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1225,7 +1225,7 @@
         },
         {
           "flow_id": "DDOS-1080",
-          "timestamp": 1788687542.6300066,
+          "timestamp": 1789385844.6797345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1240,7 +1240,7 @@
         },
         {
           "flow_id": "DDOS-1081",
-          "timestamp": 1788687542.6313066,
+          "timestamp": 1789385844.6810346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1255,7 +1255,7 @@
         },
         {
           "flow_id": "DDOS-1082",
-          "timestamp": 1788687542.6322067,
+          "timestamp": 1789385844.6819346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1270,7 +1270,7 @@
         },
         {
           "flow_id": "DDOS-1083",
-          "timestamp": 1788687542.6339066,
+          "timestamp": 1789385844.6836345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1285,7 +1285,7 @@
         },
         {
           "flow_id": "DDOS-1084",
-          "timestamp": 1788687542.6347065,
+          "timestamp": 1789385844.6844344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1300,7 +1300,7 @@
         },
         {
           "flow_id": "DDOS-1085",
-          "timestamp": 1788687542.6354065,
+          "timestamp": 1789385844.6851344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1315,7 +1315,7 @@
         },
         {
           "flow_id": "DDOS-1086",
-          "timestamp": 1788687542.6367066,
+          "timestamp": 1789385844.6864345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1330,7 +1330,7 @@
         },
         {
           "flow_id": "DDOS-1087",
-          "timestamp": 1788687542.6376066,
+          "timestamp": 1789385844.6873345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1345,7 +1345,7 @@
         },
         {
           "flow_id": "DDOS-1088",
-          "timestamp": 1788687542.6393065,
+          "timestamp": 1789385844.6890345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1360,7 +1360,7 @@
         },
         {
           "flow_id": "DDOS-1089",
-          "timestamp": 1788687542.6401064,
+          "timestamp": 1789385844.6898344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1375,7 +1375,7 @@
         },
         {
           "flow_id": "DDOS-1090",
-          "timestamp": 1788687542.6408064,
+          "timestamp": 1789385844.6905344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1390,7 +1390,7 @@
         },
         {
           "flow_id": "DDOS-1091",
-          "timestamp": 1788687542.6421065,
+          "timestamp": 1789385844.6918344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1405,7 +1405,7 @@
         },
         {
           "flow_id": "DDOS-1092",
-          "timestamp": 1788687542.6430066,
+          "timestamp": 1789385844.6927345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1420,7 +1420,7 @@
         },
         {
           "flow_id": "DDOS-1093",
-          "timestamp": 1788687542.6447065,
+          "timestamp": 1789385844.6944344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1435,7 +1435,7 @@
         },
         {
           "flow_id": "DDOS-1094",
-          "timestamp": 1788687542.6455064,
+          "timestamp": 1789385844.6952343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1450,7 +1450,7 @@
         },
         {
           "flow_id": "DDOS-1095",
-          "timestamp": 1788687542.6462064,
+          "timestamp": 1789385844.6959343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1465,7 +1465,7 @@
         },
         {
           "flow_id": "DDOS-1096",
-          "timestamp": 1788687542.6475065,
+          "timestamp": 1789385844.6972344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1480,7 +1480,7 @@
         },
         {
           "flow_id": "DDOS-1097",
-          "timestamp": 1788687542.6484065,
+          "timestamp": 1789385844.6981344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1495,7 +1495,7 @@
         },
         {
           "flow_id": "DDOS-1098",
-          "timestamp": 1788687542.6501064,
+          "timestamp": 1789385844.6998343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1510,7 +1510,7 @@
         },
         {
           "flow_id": "DDOS-1099",
-          "timestamp": 1788687542.6509063,
+          "timestamp": 1789385844.7006342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1525,7 +1525,7 @@
         },
         {
           "flow_id": "DDOS-1100",
-          "timestamp": 1788687542.6516063,
+          "timestamp": 1789385844.7013342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1540,7 +1540,7 @@
         },
         {
           "flow_id": "DDOS-1101",
-          "timestamp": 1788687542.6529064,
+          "timestamp": 1789385844.7026343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1555,7 +1555,7 @@
         },
         {
           "flow_id": "DDOS-1102",
-          "timestamp": 1788687542.6538064,
+          "timestamp": 1789385844.7035344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1570,7 +1570,7 @@
         },
         {
           "flow_id": "DDOS-1103",
-          "timestamp": 1788687542.6555064,
+          "timestamp": 1789385844.7052343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1585,7 +1585,7 @@
         },
         {
           "flow_id": "DDOS-1104",
-          "timestamp": 1788687542.6563063,
+          "timestamp": 1789385844.7060342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1600,7 +1600,7 @@
         },
         {
           "flow_id": "DDOS-1105",
-          "timestamp": 1788687542.6570063,
+          "timestamp": 1789385844.7067342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1615,7 +1615,7 @@
         },
         {
           "flow_id": "DDOS-1106",
-          "timestamp": 1788687542.6583064,
+          "timestamp": 1789385844.7080343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1630,7 +1630,7 @@
         },
         {
           "flow_id": "DDOS-1107",
-          "timestamp": 1788687542.6592064,
+          "timestamp": 1789385844.7089343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1645,7 +1645,7 @@
         },
         {
           "flow_id": "DDOS-1108",
-          "timestamp": 1788687542.6609063,
+          "timestamp": 1789385844.7106342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1660,7 +1660,7 @@
         },
         {
           "flow_id": "DDOS-1109",
-          "timestamp": 1788687542.6617062,
+          "timestamp": 1789385844.7114341,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1675,7 +1675,7 @@
         },
         {
           "flow_id": "DDOS-1110",
-          "timestamp": 1788687542.6624062,
+          "timestamp": 1789385844.7121341,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1690,7 +1690,7 @@
         },
         {
           "flow_id": "DDOS-1111",
-          "timestamp": 1788687542.6637063,
+          "timestamp": 1789385844.7134342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1705,7 +1705,7 @@
         },
         {
           "flow_id": "DDOS-1112",
-          "timestamp": 1788687542.6646063,
+          "timestamp": 1789385844.7143342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1720,7 +1720,7 @@
         },
         {
           "flow_id": "DDOS-1113",
-          "timestamp": 1788687542.6663063,
+          "timestamp": 1789385844.7160342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1735,7 +1735,7 @@
         },
         {
           "flow_id": "DDOS-1114",
-          "timestamp": 1788687542.6671062,
+          "timestamp": 1789385844.716834,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1750,7 +1750,7 @@
         },
         {
           "flow_id": "DDOS-1115",
-          "timestamp": 1788687542.6678061,
+          "timestamp": 1789385844.717534,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1765,7 +1765,7 @@
         },
         {
           "flow_id": "DDOS-1116",
-          "timestamp": 1788687542.6691062,
+          "timestamp": 1789385844.7188342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1780,7 +1780,7 @@
         },
         {
           "flow_id": "DDOS-1117",
-          "timestamp": 1788687542.6700063,
+          "timestamp": 1789385844.7197342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1795,7 +1795,7 @@
         },
         {
           "flow_id": "DDOS-1118",
-          "timestamp": 1788687542.6717062,
+          "timestamp": 1789385844.721434,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1810,7 +1810,7 @@
         },
         {
           "flow_id": "DDOS-1119",
-          "timestamp": 1788687542.672506,
+          "timestamp": 1789385844.722234,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1825,7 +1825,7 @@
         },
         {
           "flow_id": "DDOS-1120",
-          "timestamp": 1788687542.673206,
+          "timestamp": 1789385844.722934,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1840,7 +1840,7 @@
         },
         {
           "flow_id": "DDOS-1121",
-          "timestamp": 1788687542.6745062,
+          "timestamp": 1789385844.724234,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1855,7 +1855,7 @@
         },
         {
           "flow_id": "DDOS-1122",
-          "timestamp": 1788687542.6754062,
+          "timestamp": 1789385844.7251341,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1870,7 +1870,7 @@
         },
         {
           "flow_id": "DDOS-1123",
-          "timestamp": 1788687542.6771061,
+          "timestamp": 1789385844.726834,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1885,7 +1885,7 @@
         },
         {
           "flow_id": "DDOS-1124",
-          "timestamp": 1788687542.677906,
+          "timestamp": 1789385844.727634,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1900,7 +1900,7 @@
         },
         {
           "flow_id": "DDOS-1125",
-          "timestamp": 1788687542.678606,
+          "timestamp": 1789385844.728334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1915,7 +1915,7 @@
         },
         {
           "flow_id": "DDOS-1126",
-          "timestamp": 1788687542.6799061,
+          "timestamp": 1789385844.729634,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1930,7 +1930,7 @@
         },
         {
           "flow_id": "DDOS-1127",
-          "timestamp": 1788687542.6808062,
+          "timestamp": 1789385844.730534,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1945,7 +1945,7 @@
         },
         {
           "flow_id": "DDOS-1128",
-          "timestamp": 1788687542.682506,
+          "timestamp": 1789385844.732234,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1960,7 +1960,7 @@
         },
         {
           "flow_id": "DDOS-1129",
-          "timestamp": 1788687542.683306,
+          "timestamp": 1789385844.733034,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1975,7 +1975,7 @@
         },
         {
           "flow_id": "DDOS-1130",
-          "timestamp": 1788687542.684006,
+          "timestamp": 1789385844.733734,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -1990,7 +1990,7 @@
         },
         {
           "flow_id": "DDOS-1131",
-          "timestamp": 1788687542.685306,
+          "timestamp": 1789385844.735034,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2005,7 +2005,7 @@
         },
         {
           "flow_id": "DDOS-1132",
-          "timestamp": 1788687542.686206,
+          "timestamp": 1789385844.735934,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2020,7 +2020,7 @@
         },
         {
           "flow_id": "DDOS-1133",
-          "timestamp": 1788687542.687906,
+          "timestamp": 1789385844.737634,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2035,7 +2035,7 @@
         },
         {
           "flow_id": "DDOS-1134",
-          "timestamp": 1788687542.688706,
+          "timestamp": 1789385844.7384338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2050,7 +2050,7 @@
         },
         {
           "flow_id": "DDOS-1135",
-          "timestamp": 1788687542.689406,
+          "timestamp": 1789385844.7391338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2065,7 +2065,7 @@
         },
         {
           "flow_id": "DDOS-1136",
-          "timestamp": 1788687542.690706,
+          "timestamp": 1789385844.740434,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2080,7 +2080,7 @@
         },
         {
           "flow_id": "DDOS-1137",
-          "timestamp": 1788687542.691606,
+          "timestamp": 1789385844.741334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2095,7 +2095,7 @@
         },
         {
           "flow_id": "DDOS-1138",
-          "timestamp": 1788687542.693306,
+          "timestamp": 1789385844.743034,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2110,7 +2110,7 @@
         },
         {
           "flow_id": "DDOS-1139",
-          "timestamp": 1788687542.6941059,
+          "timestamp": 1789385844.7438338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2125,7 +2125,7 @@
         },
         {
           "flow_id": "DDOS-1140",
-          "timestamp": 1788687542.6948059,
+          "timestamp": 1789385844.7445338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2140,7 +2140,7 @@
         },
         {
           "flow_id": "DDOS-1141",
-          "timestamp": 1788687542.696106,
+          "timestamp": 1789385844.7458339,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2155,7 +2155,7 @@
         },
         {
           "flow_id": "DDOS-1142",
-          "timestamp": 1788687542.697006,
+          "timestamp": 1789385844.746734,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2170,7 +2170,7 @@
         },
         {
           "flow_id": "DDOS-1143",
-          "timestamp": 1788687542.698706,
+          "timestamp": 1789385844.7484338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2185,7 +2185,7 @@
         },
         {
           "flow_id": "DDOS-1144",
-          "timestamp": 1788687542.6995058,
+          "timestamp": 1789385844.7492337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2200,7 +2200,7 @@
         },
         {
           "flow_id": "DDOS-1145",
-          "timestamp": 1788687542.7002058,
+          "timestamp": 1789385844.7499337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2215,7 +2215,7 @@
         },
         {
           "flow_id": "DDOS-1146",
-          "timestamp": 1788687542.701506,
+          "timestamp": 1789385844.7512338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2230,7 +2230,7 @@
         },
         {
           "flow_id": "DDOS-1147",
-          "timestamp": 1788687542.702406,
+          "timestamp": 1789385844.7521338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2245,7 +2245,7 @@
         },
         {
           "flow_id": "DDOS-1148",
-          "timestamp": 1788687542.7041059,
+          "timestamp": 1789385844.7538338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2260,7 +2260,7 @@
         },
         {
           "flow_id": "DDOS-1149",
-          "timestamp": 1788687542.7049057,
+          "timestamp": 1789385844.7546337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2275,7 +2275,7 @@
         },
         {
           "flow_id": "DDOS-1150",
-          "timestamp": 1788687542.7056057,
+          "timestamp": 1789385844.7553337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2290,7 +2290,7 @@
         },
         {
           "flow_id": "DDOS-1151",
-          "timestamp": 1788687542.7069058,
+          "timestamp": 1789385844.7566338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2305,7 +2305,7 @@
         },
         {
           "flow_id": "DDOS-1152",
-          "timestamp": 1788687542.7078059,
+          "timestamp": 1789385844.7575338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2320,7 +2320,7 @@
         },
         {
           "flow_id": "DDOS-1153",
-          "timestamp": 1788687542.7095058,
+          "timestamp": 1789385844.7592337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2335,7 +2335,7 @@
         },
         {
           "flow_id": "DDOS-1154",
-          "timestamp": 1788687542.7103057,
+          "timestamp": 1789385844.7600336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2350,7 +2350,7 @@
         },
         {
           "flow_id": "DDOS-1155",
-          "timestamp": 1788687542.7110057,
+          "timestamp": 1789385844.7607336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2365,7 +2365,7 @@
         },
         {
           "flow_id": "DDOS-1156",
-          "timestamp": 1788687542.7123058,
+          "timestamp": 1789385844.7620337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2380,7 +2380,7 @@
         },
         {
           "flow_id": "DDOS-1157",
-          "timestamp": 1788687542.7132058,
+          "timestamp": 1789385844.7629337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2395,7 +2395,7 @@
         },
         {
           "flow_id": "DDOS-1158",
-          "timestamp": 1788687542.7149057,
+          "timestamp": 1789385844.7646337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2410,7 +2410,7 @@
         },
         {
           "flow_id": "DDOS-1159",
-          "timestamp": 1788687542.7157056,
+          "timestamp": 1789385844.7654335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2425,7 +2425,7 @@
         },
         {
           "flow_id": "DDOS-1160",
-          "timestamp": 1788687542.7164056,
+          "timestamp": 1789385844.7661335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2440,7 +2440,7 @@
         },
         {
           "flow_id": "DDOS-1161",
-          "timestamp": 1788687542.7177057,
+          "timestamp": 1789385844.7674336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2455,7 +2455,7 @@
         },
         {
           "flow_id": "DDOS-1162",
-          "timestamp": 1788687542.7186058,
+          "timestamp": 1789385844.7683337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2470,7 +2470,7 @@
         },
         {
           "flow_id": "DDOS-1163",
-          "timestamp": 1788687542.7203057,
+          "timestamp": 1789385844.7700336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2485,7 +2485,7 @@
         },
         {
           "flow_id": "DDOS-1164",
-          "timestamp": 1788687542.7211056,
+          "timestamp": 1789385844.7708335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2500,7 +2500,7 @@
         },
         {
           "flow_id": "DDOS-1165",
-          "timestamp": 1788687542.7218056,
+          "timestamp": 1789385844.7715335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2515,7 +2515,7 @@
         },
         {
           "flow_id": "DDOS-1166",
-          "timestamp": 1788687542.7231057,
+          "timestamp": 1789385844.7728336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2530,7 +2530,7 @@
         },
         {
           "flow_id": "DDOS-1167",
-          "timestamp": 1788687542.7240057,
+          "timestamp": 1789385844.7737336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2545,7 +2545,7 @@
         },
         {
           "flow_id": "DDOS-1168",
-          "timestamp": 1788687542.7257056,
+          "timestamp": 1789385844.7754335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2560,7 +2560,7 @@
         },
         {
           "flow_id": "DDOS-1169",
-          "timestamp": 1788687542.7265055,
+          "timestamp": 1789385844.7762334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2575,7 +2575,7 @@
         },
         {
           "flow_id": "DDOS-1170",
-          "timestamp": 1788687542.7272055,
+          "timestamp": 1789385844.7769334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2590,7 +2590,7 @@
         },
         {
           "flow_id": "DDOS-1171",
-          "timestamp": 1788687542.7285056,
+          "timestamp": 1789385844.7782335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2605,7 +2605,7 @@
         },
         {
           "flow_id": "DDOS-1172",
-          "timestamp": 1788687542.7294056,
+          "timestamp": 1789385844.7791336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2620,7 +2620,7 @@
         },
         {
           "flow_id": "DDOS-1173",
-          "timestamp": 1788687542.7311056,
+          "timestamp": 1789385844.7808335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2635,7 +2635,7 @@
         },
         {
           "flow_id": "DDOS-1174",
-          "timestamp": 1788687542.7319055,
+          "timestamp": 1789385844.7816334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2650,7 +2650,7 @@
         },
         {
           "flow_id": "DDOS-1175",
-          "timestamp": 1788687542.7326055,
+          "timestamp": 1789385844.7823334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2665,7 +2665,7 @@
         },
         {
           "flow_id": "DDOS-1176",
-          "timestamp": 1788687542.7339056,
+          "timestamp": 1789385844.7836335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2680,7 +2680,7 @@
         },
         {
           "flow_id": "DDOS-1177",
-          "timestamp": 1788687542.7348056,
+          "timestamp": 1789385844.7845335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2695,7 +2695,7 @@
         },
         {
           "flow_id": "DDOS-1178",
-          "timestamp": 1788687542.7365055,
+          "timestamp": 1789385844.7862334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2710,7 +2710,7 @@
         },
         {
           "flow_id": "DDOS-1179",
-          "timestamp": 1788687542.7373054,
+          "timestamp": 1789385844.7870333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2725,7 +2725,7 @@
         },
         {
           "flow_id": "DDOS-1180",
-          "timestamp": 1788687542.7380054,
+          "timestamp": 1789385844.7877333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2740,7 +2740,7 @@
         },
         {
           "flow_id": "DDOS-1181",
-          "timestamp": 1788687542.7393055,
+          "timestamp": 1789385844.7890334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2755,7 +2755,7 @@
         },
         {
           "flow_id": "DDOS-1182",
-          "timestamp": 1788687542.7402055,
+          "timestamp": 1789385844.7899334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2770,7 +2770,7 @@
         },
         {
           "flow_id": "DDOS-1183",
-          "timestamp": 1788687542.7419055,
+          "timestamp": 1789385844.7916334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2785,7 +2785,7 @@
         },
         {
           "flow_id": "DDOS-1184",
-          "timestamp": 1788687542.7427053,
+          "timestamp": 1789385844.7924333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2800,7 +2800,7 @@
         },
         {
           "flow_id": "DDOS-1185",
-          "timestamp": 1788687542.7434053,
+          "timestamp": 1789385844.7931333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2815,7 +2815,7 @@
         },
         {
           "flow_id": "DDOS-1186",
-          "timestamp": 1788687542.7447054,
+          "timestamp": 1789385844.7944334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2830,7 +2830,7 @@
         },
         {
           "flow_id": "DDOS-1187",
-          "timestamp": 1788687542.7456055,
+          "timestamp": 1789385844.7953334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2845,7 +2845,7 @@
         },
         {
           "flow_id": "DDOS-1188",
-          "timestamp": 1788687542.7473054,
+          "timestamp": 1789385844.7970333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2860,7 +2860,7 @@
         },
         {
           "flow_id": "DDOS-1189",
-          "timestamp": 1788687542.7481053,
+          "timestamp": 1789385844.7978332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2875,7 +2875,7 @@
         },
         {
           "flow_id": "DDOS-1190",
-          "timestamp": 1788687542.7488053,
+          "timestamp": 1789385844.7985332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2890,7 +2890,7 @@
         },
         {
           "flow_id": "DDOS-1191",
-          "timestamp": 1788687542.7501054,
+          "timestamp": 1789385844.7998333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2905,7 +2905,7 @@
         },
         {
           "flow_id": "DDOS-1192",
-          "timestamp": 1788687542.7510054,
+          "timestamp": 1789385844.8007333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2920,7 +2920,7 @@
         },
         {
           "flow_id": "DDOS-1193",
-          "timestamp": 1788687542.7527053,
+          "timestamp": 1789385844.8024333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2935,7 +2935,7 @@
         },
         {
           "flow_id": "DDOS-1194",
-          "timestamp": 1788687542.7535052,
+          "timestamp": 1789385844.8032331,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2950,7 +2950,7 @@
         },
         {
           "flow_id": "DDOS-1195",
-          "timestamp": 1788687542.7542052,
+          "timestamp": 1789385844.8039331,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2965,7 +2965,7 @@
         },
         {
           "flow_id": "DDOS-1196",
-          "timestamp": 1788687542.7555053,
+          "timestamp": 1789385844.8052332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2980,7 +2980,7 @@
         },
         {
           "flow_id": "DDOS-1197",
-          "timestamp": 1788687542.7564054,
+          "timestamp": 1789385844.8061333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -2995,7 +2995,7 @@
         },
         {
           "flow_id": "DDOS-1198",
-          "timestamp": 1788687542.7581053,
+          "timestamp": 1789385844.8078332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3010,7 +3010,7 @@
         },
         {
           "flow_id": "DDOS-1199",
-          "timestamp": 1788687542.7589052,
+          "timestamp": 1789385844.808633,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3027,7 +3027,7 @@
       "all_triggered_detections": [
         {
           "flow_id": "DDOS-999",
-          "timestamp": 1788687542.5429075,
+          "timestamp": 1789385844.5926354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3042,7 +3042,7 @@
         },
         {
           "flow_id": "DDOS-1000",
-          "timestamp": 1788687542.5436075,
+          "timestamp": 1789385844.5933354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3057,7 +3057,7 @@
         },
         {
           "flow_id": "DDOS-1001",
-          "timestamp": 1788687542.5449076,
+          "timestamp": 1789385844.5946355,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3072,7 +3072,7 @@
         },
         {
           "flow_id": "DDOS-1002",
-          "timestamp": 1788687542.5458076,
+          "timestamp": 1789385844.5955355,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3087,7 +3087,7 @@
         },
         {
           "flow_id": "DDOS-1003",
-          "timestamp": 1788687542.5475075,
+          "timestamp": 1789385844.5972354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3102,7 +3102,7 @@
         },
         {
           "flow_id": "DDOS-1004",
-          "timestamp": 1788687542.5483074,
+          "timestamp": 1789385844.5980353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3117,7 +3117,7 @@
         },
         {
           "flow_id": "DDOS-1005",
-          "timestamp": 1788687542.5490074,
+          "timestamp": 1789385844.5987353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3132,7 +3132,7 @@
         },
         {
           "flow_id": "DDOS-1006",
-          "timestamp": 1788687542.5503075,
+          "timestamp": 1789385844.6000354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3147,7 +3147,7 @@
         },
         {
           "flow_id": "DDOS-1007",
-          "timestamp": 1788687542.5512075,
+          "timestamp": 1789385844.6009355,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3162,7 +3162,7 @@
         },
         {
           "flow_id": "DDOS-1008",
-          "timestamp": 1788687542.5529075,
+          "timestamp": 1789385844.6026354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3177,7 +3177,7 @@
         },
         {
           "flow_id": "DDOS-1009",
-          "timestamp": 1788687542.5537074,
+          "timestamp": 1789385844.6034353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3192,7 +3192,7 @@
         },
         {
           "flow_id": "DDOS-1010",
-          "timestamp": 1788687542.5544074,
+          "timestamp": 1789385844.6041353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3207,7 +3207,7 @@
         },
         {
           "flow_id": "DDOS-1011",
-          "timestamp": 1788687542.5557075,
+          "timestamp": 1789385844.6054354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3222,7 +3222,7 @@
         },
         {
           "flow_id": "DDOS-1012",
-          "timestamp": 1788687542.5566075,
+          "timestamp": 1789385844.6063354,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3237,7 +3237,7 @@
         },
         {
           "flow_id": "DDOS-1013",
-          "timestamp": 1788687542.5583074,
+          "timestamp": 1789385844.6080353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3252,7 +3252,7 @@
         },
         {
           "flow_id": "DDOS-1014",
-          "timestamp": 1788687542.5591073,
+          "timestamp": 1789385844.6088352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3267,7 +3267,7 @@
         },
         {
           "flow_id": "DDOS-1015",
-          "timestamp": 1788687542.5598073,
+          "timestamp": 1789385844.6095352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3282,7 +3282,7 @@
         },
         {
           "flow_id": "DDOS-1016",
-          "timestamp": 1788687542.5611074,
+          "timestamp": 1789385844.6108353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3297,7 +3297,7 @@
         },
         {
           "flow_id": "DDOS-1017",
-          "timestamp": 1788687542.5620074,
+          "timestamp": 1789385844.6117353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3312,7 +3312,7 @@
         },
         {
           "flow_id": "DDOS-1018",
-          "timestamp": 1788687542.5637074,
+          "timestamp": 1789385844.6134353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3327,7 +3327,7 @@
         },
         {
           "flow_id": "DDOS-1019",
-          "timestamp": 1788687542.5645072,
+          "timestamp": 1789385844.6142352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3342,7 +3342,7 @@
         },
         {
           "flow_id": "DDOS-1020",
-          "timestamp": 1788687542.5652072,
+          "timestamp": 1789385844.6149352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3357,7 +3357,7 @@
         },
         {
           "flow_id": "DDOS-1021",
-          "timestamp": 1788687542.5665073,
+          "timestamp": 1789385844.6162353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3372,7 +3372,7 @@
         },
         {
           "flow_id": "DDOS-1022",
-          "timestamp": 1788687542.5674074,
+          "timestamp": 1789385844.6171353,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3387,7 +3387,7 @@
         },
         {
           "flow_id": "DDOS-1023",
-          "timestamp": 1788687542.5691073,
+          "timestamp": 1789385844.6188352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3402,7 +3402,7 @@
         },
         {
           "flow_id": "DDOS-1024",
-          "timestamp": 1788687542.5699072,
+          "timestamp": 1789385844.619635,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3417,7 +3417,7 @@
         },
         {
           "flow_id": "DDOS-1025",
-          "timestamp": 1788687542.5706072,
+          "timestamp": 1789385844.620335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3432,7 +3432,7 @@
         },
         {
           "flow_id": "DDOS-1026",
-          "timestamp": 1788687542.5719073,
+          "timestamp": 1789385844.6216352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3447,7 +3447,7 @@
         },
         {
           "flow_id": "DDOS-1027",
-          "timestamp": 1788687542.5728073,
+          "timestamp": 1789385844.6225352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3462,7 +3462,7 @@
         },
         {
           "flow_id": "DDOS-1028",
-          "timestamp": 1788687542.5745072,
+          "timestamp": 1789385844.6242352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3477,7 +3477,7 @@
         },
         {
           "flow_id": "DDOS-1029",
-          "timestamp": 1788687542.5753071,
+          "timestamp": 1789385844.625035,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3492,7 +3492,7 @@
         },
         {
           "flow_id": "DDOS-1030",
-          "timestamp": 1788687542.5760071,
+          "timestamp": 1789385844.625735,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3507,7 +3507,7 @@
         },
         {
           "flow_id": "DDOS-1031",
-          "timestamp": 1788687542.5773072,
+          "timestamp": 1789385844.6270351,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3522,7 +3522,7 @@
         },
         {
           "flow_id": "DDOS-1032",
-          "timestamp": 1788687542.5782073,
+          "timestamp": 1789385844.6279352,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3537,7 +3537,7 @@
         },
         {
           "flow_id": "DDOS-1033",
-          "timestamp": 1788687542.5799072,
+          "timestamp": 1789385844.629635,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3552,7 +3552,7 @@
         },
         {
           "flow_id": "DDOS-1034",
-          "timestamp": 1788687542.580707,
+          "timestamp": 1789385844.630435,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3567,7 +3567,7 @@
         },
         {
           "flow_id": "DDOS-1035",
-          "timestamp": 1788687542.581407,
+          "timestamp": 1789385844.631135,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3582,7 +3582,7 @@
         },
         {
           "flow_id": "DDOS-1036",
-          "timestamp": 1788687542.5827072,
+          "timestamp": 1789385844.632435,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3597,7 +3597,7 @@
         },
         {
           "flow_id": "DDOS-1037",
-          "timestamp": 1788687542.5836072,
+          "timestamp": 1789385844.633335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3612,7 +3612,7 @@
         },
         {
           "flow_id": "DDOS-1038",
-          "timestamp": 1788687542.5853071,
+          "timestamp": 1789385844.635035,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3627,7 +3627,7 @@
         },
         {
           "flow_id": "DDOS-1039",
-          "timestamp": 1788687542.586107,
+          "timestamp": 1789385844.635835,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3642,7 +3642,7 @@
         },
         {
           "flow_id": "DDOS-1040",
-          "timestamp": 1788687542.586807,
+          "timestamp": 1789385844.636535,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3657,7 +3657,7 @@
         },
         {
           "flow_id": "DDOS-1041",
-          "timestamp": 1788687542.588107,
+          "timestamp": 1789385844.637835,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3672,7 +3672,7 @@
         },
         {
           "flow_id": "DDOS-1042",
-          "timestamp": 1788687542.5890071,
+          "timestamp": 1789385844.638735,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3687,7 +3687,7 @@
         },
         {
           "flow_id": "DDOS-1043",
-          "timestamp": 1788687542.590707,
+          "timestamp": 1789385844.640435,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3702,7 +3702,7 @@
         },
         {
           "flow_id": "DDOS-1044",
-          "timestamp": 1788687542.591507,
+          "timestamp": 1789385844.6412349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3717,7 +3717,7 @@
         },
         {
           "flow_id": "DDOS-1045",
-          "timestamp": 1788687542.592207,
+          "timestamp": 1789385844.6419349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3732,7 +3732,7 @@
         },
         {
           "flow_id": "DDOS-1046",
-          "timestamp": 1788687542.593507,
+          "timestamp": 1789385844.643235,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3747,7 +3747,7 @@
         },
         {
           "flow_id": "DDOS-1047",
-          "timestamp": 1788687542.594407,
+          "timestamp": 1789385844.644135,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3762,7 +3762,7 @@
         },
         {
           "flow_id": "DDOS-1048",
-          "timestamp": 1788687542.596107,
+          "timestamp": 1789385844.645835,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3777,7 +3777,7 @@
         },
         {
           "flow_id": "DDOS-1049",
-          "timestamp": 1788687542.596907,
+          "timestamp": 1789385844.6466348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3792,7 +3792,7 @@
         },
         {
           "flow_id": "DDOS-1050",
-          "timestamp": 1788687542.597607,
+          "timestamp": 1789385844.6473348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3807,7 +3807,7 @@
         },
         {
           "flow_id": "DDOS-1051",
-          "timestamp": 1788687542.598907,
+          "timestamp": 1789385844.648635,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3822,7 +3822,7 @@
         },
         {
           "flow_id": "DDOS-1052",
-          "timestamp": 1788687542.599807,
+          "timestamp": 1789385844.649535,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3837,7 +3837,7 @@
         },
         {
           "flow_id": "DDOS-1053",
-          "timestamp": 1788687542.601507,
+          "timestamp": 1789385844.6512349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3852,7 +3852,7 @@
         },
         {
           "flow_id": "DDOS-1054",
-          "timestamp": 1788687542.6023068,
+          "timestamp": 1789385844.6520348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3867,7 +3867,7 @@
         },
         {
           "flow_id": "DDOS-1055",
-          "timestamp": 1788687542.6030068,
+          "timestamp": 1789385844.6527348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3882,7 +3882,7 @@
         },
         {
           "flow_id": "DDOS-1056",
-          "timestamp": 1788687542.604307,
+          "timestamp": 1789385844.6540349,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3897,7 +3897,7 @@
         },
         {
           "flow_id": "DDOS-1057",
-          "timestamp": 1788687542.605207,
+          "timestamp": 1789385844.654935,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3912,7 +3912,7 @@
         },
         {
           "flow_id": "DDOS-1058",
-          "timestamp": 1788687542.606907,
+          "timestamp": 1789385844.6566348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3927,7 +3927,7 @@
         },
         {
           "flow_id": "DDOS-1059",
-          "timestamp": 1788687542.6077068,
+          "timestamp": 1789385844.6574347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3942,7 +3942,7 @@
         },
         {
           "flow_id": "DDOS-1060",
-          "timestamp": 1788687542.6084068,
+          "timestamp": 1789385844.6581347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3957,7 +3957,7 @@
         },
         {
           "flow_id": "DDOS-1061",
-          "timestamp": 1788687542.6097069,
+          "timestamp": 1789385844.6594348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3972,7 +3972,7 @@
         },
         {
           "flow_id": "DDOS-1062",
-          "timestamp": 1788687542.610607,
+          "timestamp": 1789385844.6603348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -3987,7 +3987,7 @@
         },
         {
           "flow_id": "DDOS-1063",
-          "timestamp": 1788687542.6123068,
+          "timestamp": 1789385844.6620347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4002,7 +4002,7 @@
         },
         {
           "flow_id": "DDOS-1064",
-          "timestamp": 1788687542.6131067,
+          "timestamp": 1789385844.6628346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4017,7 +4017,7 @@
         },
         {
           "flow_id": "DDOS-1065",
-          "timestamp": 1788687542.6138067,
+          "timestamp": 1789385844.6635346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4032,7 +4032,7 @@
         },
         {
           "flow_id": "DDOS-1066",
-          "timestamp": 1788687542.6151068,
+          "timestamp": 1789385844.6648347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4047,7 +4047,7 @@
         },
         {
           "flow_id": "DDOS-1067",
-          "timestamp": 1788687542.6160069,
+          "timestamp": 1789385844.6657348,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4062,7 +4062,7 @@
         },
         {
           "flow_id": "DDOS-1068",
-          "timestamp": 1788687542.6177068,
+          "timestamp": 1789385844.6674347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4077,7 +4077,7 @@
         },
         {
           "flow_id": "DDOS-1069",
-          "timestamp": 1788687542.6185067,
+          "timestamp": 1789385844.6682346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4092,7 +4092,7 @@
         },
         {
           "flow_id": "DDOS-1070",
-          "timestamp": 1788687542.6192067,
+          "timestamp": 1789385844.6689346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4107,7 +4107,7 @@
         },
         {
           "flow_id": "DDOS-1071",
-          "timestamp": 1788687542.6205068,
+          "timestamp": 1789385844.6702347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4122,7 +4122,7 @@
         },
         {
           "flow_id": "DDOS-1072",
-          "timestamp": 1788687542.6214068,
+          "timestamp": 1789385844.6711347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4137,7 +4137,7 @@
         },
         {
           "flow_id": "DDOS-1073",
-          "timestamp": 1788687542.6231067,
+          "timestamp": 1789385844.6728346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4152,7 +4152,7 @@
         },
         {
           "flow_id": "DDOS-1074",
-          "timestamp": 1788687542.6239066,
+          "timestamp": 1789385844.6736345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4167,7 +4167,7 @@
         },
         {
           "flow_id": "DDOS-1075",
-          "timestamp": 1788687542.6246066,
+          "timestamp": 1789385844.6743345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4182,7 +4182,7 @@
         },
         {
           "flow_id": "DDOS-1076",
-          "timestamp": 1788687542.6259067,
+          "timestamp": 1789385844.6756346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4197,7 +4197,7 @@
         },
         {
           "flow_id": "DDOS-1077",
-          "timestamp": 1788687542.6268067,
+          "timestamp": 1789385844.6765347,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4212,7 +4212,7 @@
         },
         {
           "flow_id": "DDOS-1078",
-          "timestamp": 1788687542.6285067,
+          "timestamp": 1789385844.6782346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4227,7 +4227,7 @@
         },
         {
           "flow_id": "DDOS-1079",
-          "timestamp": 1788687542.6293066,
+          "timestamp": 1789385844.6790345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4242,7 +4242,7 @@
         },
         {
           "flow_id": "DDOS-1080",
-          "timestamp": 1788687542.6300066,
+          "timestamp": 1789385844.6797345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4257,7 +4257,7 @@
         },
         {
           "flow_id": "DDOS-1081",
-          "timestamp": 1788687542.6313066,
+          "timestamp": 1789385844.6810346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4272,7 +4272,7 @@
         },
         {
           "flow_id": "DDOS-1082",
-          "timestamp": 1788687542.6322067,
+          "timestamp": 1789385844.6819346,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4287,7 +4287,7 @@
         },
         {
           "flow_id": "DDOS-1083",
-          "timestamp": 1788687542.6339066,
+          "timestamp": 1789385844.6836345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4302,7 +4302,7 @@
         },
         {
           "flow_id": "DDOS-1084",
-          "timestamp": 1788687542.6347065,
+          "timestamp": 1789385844.6844344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4317,7 +4317,7 @@
         },
         {
           "flow_id": "DDOS-1085",
-          "timestamp": 1788687542.6354065,
+          "timestamp": 1789385844.6851344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4332,7 +4332,7 @@
         },
         {
           "flow_id": "DDOS-1086",
-          "timestamp": 1788687542.6367066,
+          "timestamp": 1789385844.6864345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4347,7 +4347,7 @@
         },
         {
           "flow_id": "DDOS-1087",
-          "timestamp": 1788687542.6376066,
+          "timestamp": 1789385844.6873345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4362,7 +4362,7 @@
         },
         {
           "flow_id": "DDOS-1088",
-          "timestamp": 1788687542.6393065,
+          "timestamp": 1789385844.6890345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4377,7 +4377,7 @@
         },
         {
           "flow_id": "DDOS-1089",
-          "timestamp": 1788687542.6401064,
+          "timestamp": 1789385844.6898344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4392,7 +4392,7 @@
         },
         {
           "flow_id": "DDOS-1090",
-          "timestamp": 1788687542.6408064,
+          "timestamp": 1789385844.6905344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4407,7 +4407,7 @@
         },
         {
           "flow_id": "DDOS-1091",
-          "timestamp": 1788687542.6421065,
+          "timestamp": 1789385844.6918344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4422,7 +4422,7 @@
         },
         {
           "flow_id": "DDOS-1092",
-          "timestamp": 1788687542.6430066,
+          "timestamp": 1789385844.6927345,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4437,7 +4437,7 @@
         },
         {
           "flow_id": "DDOS-1093",
-          "timestamp": 1788687542.6447065,
+          "timestamp": 1789385844.6944344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4452,7 +4452,7 @@
         },
         {
           "flow_id": "DDOS-1094",
-          "timestamp": 1788687542.6455064,
+          "timestamp": 1789385844.6952343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4467,7 +4467,7 @@
         },
         {
           "flow_id": "DDOS-1095",
-          "timestamp": 1788687542.6462064,
+          "timestamp": 1789385844.6959343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4482,7 +4482,7 @@
         },
         {
           "flow_id": "DDOS-1096",
-          "timestamp": 1788687542.6475065,
+          "timestamp": 1789385844.6972344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4497,7 +4497,7 @@
         },
         {
           "flow_id": "DDOS-1097",
-          "timestamp": 1788687542.6484065,
+          "timestamp": 1789385844.6981344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4512,7 +4512,7 @@
         },
         {
           "flow_id": "DDOS-1098",
-          "timestamp": 1788687542.6501064,
+          "timestamp": 1789385844.6998343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4527,7 +4527,7 @@
         },
         {
           "flow_id": "DDOS-1099",
-          "timestamp": 1788687542.6509063,
+          "timestamp": 1789385844.7006342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4542,7 +4542,7 @@
         },
         {
           "flow_id": "DDOS-1100",
-          "timestamp": 1788687542.6516063,
+          "timestamp": 1789385844.7013342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4557,7 +4557,7 @@
         },
         {
           "flow_id": "DDOS-1101",
-          "timestamp": 1788687542.6529064,
+          "timestamp": 1789385844.7026343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4572,7 +4572,7 @@
         },
         {
           "flow_id": "DDOS-1102",
-          "timestamp": 1788687542.6538064,
+          "timestamp": 1789385844.7035344,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4587,7 +4587,7 @@
         },
         {
           "flow_id": "DDOS-1103",
-          "timestamp": 1788687542.6555064,
+          "timestamp": 1789385844.7052343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4602,7 +4602,7 @@
         },
         {
           "flow_id": "DDOS-1104",
-          "timestamp": 1788687542.6563063,
+          "timestamp": 1789385844.7060342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4617,7 +4617,7 @@
         },
         {
           "flow_id": "DDOS-1105",
-          "timestamp": 1788687542.6570063,
+          "timestamp": 1789385844.7067342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4632,7 +4632,7 @@
         },
         {
           "flow_id": "DDOS-1106",
-          "timestamp": 1788687542.6583064,
+          "timestamp": 1789385844.7080343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4647,7 +4647,7 @@
         },
         {
           "flow_id": "DDOS-1107",
-          "timestamp": 1788687542.6592064,
+          "timestamp": 1789385844.7089343,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4662,7 +4662,7 @@
         },
         {
           "flow_id": "DDOS-1108",
-          "timestamp": 1788687542.6609063,
+          "timestamp": 1789385844.7106342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4677,7 +4677,7 @@
         },
         {
           "flow_id": "DDOS-1109",
-          "timestamp": 1788687542.6617062,
+          "timestamp": 1789385844.7114341,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4692,7 +4692,7 @@
         },
         {
           "flow_id": "DDOS-1110",
-          "timestamp": 1788687542.6624062,
+          "timestamp": 1789385844.7121341,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4707,7 +4707,7 @@
         },
         {
           "flow_id": "DDOS-1111",
-          "timestamp": 1788687542.6637063,
+          "timestamp": 1789385844.7134342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4722,7 +4722,7 @@
         },
         {
           "flow_id": "DDOS-1112",
-          "timestamp": 1788687542.6646063,
+          "timestamp": 1789385844.7143342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4737,7 +4737,7 @@
         },
         {
           "flow_id": "DDOS-1113",
-          "timestamp": 1788687542.6663063,
+          "timestamp": 1789385844.7160342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4752,7 +4752,7 @@
         },
         {
           "flow_id": "DDOS-1114",
-          "timestamp": 1788687542.6671062,
+          "timestamp": 1789385844.716834,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4767,7 +4767,7 @@
         },
         {
           "flow_id": "DDOS-1115",
-          "timestamp": 1788687542.6678061,
+          "timestamp": 1789385844.717534,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4782,7 +4782,7 @@
         },
         {
           "flow_id": "DDOS-1116",
-          "timestamp": 1788687542.6691062,
+          "timestamp": 1789385844.7188342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4797,7 +4797,7 @@
         },
         {
           "flow_id": "DDOS-1117",
-          "timestamp": 1788687542.6700063,
+          "timestamp": 1789385844.7197342,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4812,7 +4812,7 @@
         },
         {
           "flow_id": "DDOS-1118",
-          "timestamp": 1788687542.6717062,
+          "timestamp": 1789385844.721434,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4827,7 +4827,7 @@
         },
         {
           "flow_id": "DDOS-1119",
-          "timestamp": 1788687542.672506,
+          "timestamp": 1789385844.722234,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4842,7 +4842,7 @@
         },
         {
           "flow_id": "DDOS-1120",
-          "timestamp": 1788687542.673206,
+          "timestamp": 1789385844.722934,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4857,7 +4857,7 @@
         },
         {
           "flow_id": "DDOS-1121",
-          "timestamp": 1788687542.6745062,
+          "timestamp": 1789385844.724234,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4872,7 +4872,7 @@
         },
         {
           "flow_id": "DDOS-1122",
-          "timestamp": 1788687542.6754062,
+          "timestamp": 1789385844.7251341,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4887,7 +4887,7 @@
         },
         {
           "flow_id": "DDOS-1123",
-          "timestamp": 1788687542.6771061,
+          "timestamp": 1789385844.726834,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4902,7 +4902,7 @@
         },
         {
           "flow_id": "DDOS-1124",
-          "timestamp": 1788687542.677906,
+          "timestamp": 1789385844.727634,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4917,7 +4917,7 @@
         },
         {
           "flow_id": "DDOS-1125",
-          "timestamp": 1788687542.678606,
+          "timestamp": 1789385844.728334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4932,7 +4932,7 @@
         },
         {
           "flow_id": "DDOS-1126",
-          "timestamp": 1788687542.6799061,
+          "timestamp": 1789385844.729634,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4947,7 +4947,7 @@
         },
         {
           "flow_id": "DDOS-1127",
-          "timestamp": 1788687542.6808062,
+          "timestamp": 1789385844.730534,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4962,7 +4962,7 @@
         },
         {
           "flow_id": "DDOS-1128",
-          "timestamp": 1788687542.682506,
+          "timestamp": 1789385844.732234,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4977,7 +4977,7 @@
         },
         {
           "flow_id": "DDOS-1129",
-          "timestamp": 1788687542.683306,
+          "timestamp": 1789385844.733034,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -4992,7 +4992,7 @@
         },
         {
           "flow_id": "DDOS-1130",
-          "timestamp": 1788687542.684006,
+          "timestamp": 1789385844.733734,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5007,7 +5007,7 @@
         },
         {
           "flow_id": "DDOS-1131",
-          "timestamp": 1788687542.685306,
+          "timestamp": 1789385844.735034,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5022,7 +5022,7 @@
         },
         {
           "flow_id": "DDOS-1132",
-          "timestamp": 1788687542.686206,
+          "timestamp": 1789385844.735934,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5037,7 +5037,7 @@
         },
         {
           "flow_id": "DDOS-1133",
-          "timestamp": 1788687542.687906,
+          "timestamp": 1789385844.737634,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5052,7 +5052,7 @@
         },
         {
           "flow_id": "DDOS-1134",
-          "timestamp": 1788687542.688706,
+          "timestamp": 1789385844.7384338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5067,7 +5067,7 @@
         },
         {
           "flow_id": "DDOS-1135",
-          "timestamp": 1788687542.689406,
+          "timestamp": 1789385844.7391338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5082,7 +5082,7 @@
         },
         {
           "flow_id": "DDOS-1136",
-          "timestamp": 1788687542.690706,
+          "timestamp": 1789385844.740434,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5097,7 +5097,7 @@
         },
         {
           "flow_id": "DDOS-1137",
-          "timestamp": 1788687542.691606,
+          "timestamp": 1789385844.741334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5112,7 +5112,7 @@
         },
         {
           "flow_id": "DDOS-1138",
-          "timestamp": 1788687542.693306,
+          "timestamp": 1789385844.743034,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5127,7 +5127,7 @@
         },
         {
           "flow_id": "DDOS-1139",
-          "timestamp": 1788687542.6941059,
+          "timestamp": 1789385844.7438338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5142,7 +5142,7 @@
         },
         {
           "flow_id": "DDOS-1140",
-          "timestamp": 1788687542.6948059,
+          "timestamp": 1789385844.7445338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5157,7 +5157,7 @@
         },
         {
           "flow_id": "DDOS-1141",
-          "timestamp": 1788687542.696106,
+          "timestamp": 1789385844.7458339,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5172,7 +5172,7 @@
         },
         {
           "flow_id": "DDOS-1142",
-          "timestamp": 1788687542.697006,
+          "timestamp": 1789385844.746734,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5187,7 +5187,7 @@
         },
         {
           "flow_id": "DDOS-1143",
-          "timestamp": 1788687542.698706,
+          "timestamp": 1789385844.7484338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5202,7 +5202,7 @@
         },
         {
           "flow_id": "DDOS-1144",
-          "timestamp": 1788687542.6995058,
+          "timestamp": 1789385844.7492337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5217,7 +5217,7 @@
         },
         {
           "flow_id": "DDOS-1145",
-          "timestamp": 1788687542.7002058,
+          "timestamp": 1789385844.7499337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5232,7 +5232,7 @@
         },
         {
           "flow_id": "DDOS-1146",
-          "timestamp": 1788687542.701506,
+          "timestamp": 1789385844.7512338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5247,7 +5247,7 @@
         },
         {
           "flow_id": "DDOS-1147",
-          "timestamp": 1788687542.702406,
+          "timestamp": 1789385844.7521338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5262,7 +5262,7 @@
         },
         {
           "flow_id": "DDOS-1148",
-          "timestamp": 1788687542.7041059,
+          "timestamp": 1789385844.7538338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5277,7 +5277,7 @@
         },
         {
           "flow_id": "DDOS-1149",
-          "timestamp": 1788687542.7049057,
+          "timestamp": 1789385844.7546337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5292,7 +5292,7 @@
         },
         {
           "flow_id": "DDOS-1150",
-          "timestamp": 1788687542.7056057,
+          "timestamp": 1789385844.7553337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5307,7 +5307,7 @@
         },
         {
           "flow_id": "DDOS-1151",
-          "timestamp": 1788687542.7069058,
+          "timestamp": 1789385844.7566338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5322,7 +5322,7 @@
         },
         {
           "flow_id": "DDOS-1152",
-          "timestamp": 1788687542.7078059,
+          "timestamp": 1789385844.7575338,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5337,7 +5337,7 @@
         },
         {
           "flow_id": "DDOS-1153",
-          "timestamp": 1788687542.7095058,
+          "timestamp": 1789385844.7592337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5352,7 +5352,7 @@
         },
         {
           "flow_id": "DDOS-1154",
-          "timestamp": 1788687542.7103057,
+          "timestamp": 1789385844.7600336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5367,7 +5367,7 @@
         },
         {
           "flow_id": "DDOS-1155",
-          "timestamp": 1788687542.7110057,
+          "timestamp": 1789385844.7607336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5382,7 +5382,7 @@
         },
         {
           "flow_id": "DDOS-1156",
-          "timestamp": 1788687542.7123058,
+          "timestamp": 1789385844.7620337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5397,7 +5397,7 @@
         },
         {
           "flow_id": "DDOS-1157",
-          "timestamp": 1788687542.7132058,
+          "timestamp": 1789385844.7629337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5412,7 +5412,7 @@
         },
         {
           "flow_id": "DDOS-1158",
-          "timestamp": 1788687542.7149057,
+          "timestamp": 1789385844.7646337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5427,7 +5427,7 @@
         },
         {
           "flow_id": "DDOS-1159",
-          "timestamp": 1788687542.7157056,
+          "timestamp": 1789385844.7654335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5442,7 +5442,7 @@
         },
         {
           "flow_id": "DDOS-1160",
-          "timestamp": 1788687542.7164056,
+          "timestamp": 1789385844.7661335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5457,7 +5457,7 @@
         },
         {
           "flow_id": "DDOS-1161",
-          "timestamp": 1788687542.7177057,
+          "timestamp": 1789385844.7674336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5472,7 +5472,7 @@
         },
         {
           "flow_id": "DDOS-1162",
-          "timestamp": 1788687542.7186058,
+          "timestamp": 1789385844.7683337,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5487,7 +5487,7 @@
         },
         {
           "flow_id": "DDOS-1163",
-          "timestamp": 1788687542.7203057,
+          "timestamp": 1789385844.7700336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5502,7 +5502,7 @@
         },
         {
           "flow_id": "DDOS-1164",
-          "timestamp": 1788687542.7211056,
+          "timestamp": 1789385844.7708335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5517,7 +5517,7 @@
         },
         {
           "flow_id": "DDOS-1165",
-          "timestamp": 1788687542.7218056,
+          "timestamp": 1789385844.7715335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5532,7 +5532,7 @@
         },
         {
           "flow_id": "DDOS-1166",
-          "timestamp": 1788687542.7231057,
+          "timestamp": 1789385844.7728336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5547,7 +5547,7 @@
         },
         {
           "flow_id": "DDOS-1167",
-          "timestamp": 1788687542.7240057,
+          "timestamp": 1789385844.7737336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5562,7 +5562,7 @@
         },
         {
           "flow_id": "DDOS-1168",
-          "timestamp": 1788687542.7257056,
+          "timestamp": 1789385844.7754335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5577,7 +5577,7 @@
         },
         {
           "flow_id": "DDOS-1169",
-          "timestamp": 1788687542.7265055,
+          "timestamp": 1789385844.7762334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5592,7 +5592,7 @@
         },
         {
           "flow_id": "DDOS-1170",
-          "timestamp": 1788687542.7272055,
+          "timestamp": 1789385844.7769334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5607,7 +5607,7 @@
         },
         {
           "flow_id": "DDOS-1171",
-          "timestamp": 1788687542.7285056,
+          "timestamp": 1789385844.7782335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5622,7 +5622,7 @@
         },
         {
           "flow_id": "DDOS-1172",
-          "timestamp": 1788687542.7294056,
+          "timestamp": 1789385844.7791336,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5637,7 +5637,7 @@
         },
         {
           "flow_id": "DDOS-1173",
-          "timestamp": 1788687542.7311056,
+          "timestamp": 1789385844.7808335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5652,7 +5652,7 @@
         },
         {
           "flow_id": "DDOS-1174",
-          "timestamp": 1788687542.7319055,
+          "timestamp": 1789385844.7816334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5667,7 +5667,7 @@
         },
         {
           "flow_id": "DDOS-1175",
-          "timestamp": 1788687542.7326055,
+          "timestamp": 1789385844.7823334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5682,7 +5682,7 @@
         },
         {
           "flow_id": "DDOS-1176",
-          "timestamp": 1788687542.7339056,
+          "timestamp": 1789385844.7836335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5697,7 +5697,7 @@
         },
         {
           "flow_id": "DDOS-1177",
-          "timestamp": 1788687542.7348056,
+          "timestamp": 1789385844.7845335,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5712,7 +5712,7 @@
         },
         {
           "flow_id": "DDOS-1178",
-          "timestamp": 1788687542.7365055,
+          "timestamp": 1789385844.7862334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5727,7 +5727,7 @@
         },
         {
           "flow_id": "DDOS-1179",
-          "timestamp": 1788687542.7373054,
+          "timestamp": 1789385844.7870333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5742,7 +5742,7 @@
         },
         {
           "flow_id": "DDOS-1180",
-          "timestamp": 1788687542.7380054,
+          "timestamp": 1789385844.7877333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5757,7 +5757,7 @@
         },
         {
           "flow_id": "DDOS-1181",
-          "timestamp": 1788687542.7393055,
+          "timestamp": 1789385844.7890334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5772,7 +5772,7 @@
         },
         {
           "flow_id": "DDOS-1182",
-          "timestamp": 1788687542.7402055,
+          "timestamp": 1789385844.7899334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5787,7 +5787,7 @@
         },
         {
           "flow_id": "DDOS-1183",
-          "timestamp": 1788687542.7419055,
+          "timestamp": 1789385844.7916334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5802,7 +5802,7 @@
         },
         {
           "flow_id": "DDOS-1184",
-          "timestamp": 1788687542.7427053,
+          "timestamp": 1789385844.7924333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5817,7 +5817,7 @@
         },
         {
           "flow_id": "DDOS-1185",
-          "timestamp": 1788687542.7434053,
+          "timestamp": 1789385844.7931333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5832,7 +5832,7 @@
         },
         {
           "flow_id": "DDOS-1186",
-          "timestamp": 1788687542.7447054,
+          "timestamp": 1789385844.7944334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5847,7 +5847,7 @@
         },
         {
           "flow_id": "DDOS-1187",
-          "timestamp": 1788687542.7456055,
+          "timestamp": 1789385844.7953334,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5862,7 +5862,7 @@
         },
         {
           "flow_id": "DDOS-1188",
-          "timestamp": 1788687542.7473054,
+          "timestamp": 1789385844.7970333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5877,7 +5877,7 @@
         },
         {
           "flow_id": "DDOS-1189",
-          "timestamp": 1788687542.7481053,
+          "timestamp": 1789385844.7978332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5892,7 +5892,7 @@
         },
         {
           "flow_id": "DDOS-1190",
-          "timestamp": 1788687542.7488053,
+          "timestamp": 1789385844.7985332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5907,7 +5907,7 @@
         },
         {
           "flow_id": "DDOS-1191",
-          "timestamp": 1788687542.7501054,
+          "timestamp": 1789385844.7998333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5922,7 +5922,7 @@
         },
         {
           "flow_id": "DDOS-1192",
-          "timestamp": 1788687542.7510054,
+          "timestamp": 1789385844.8007333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5937,7 +5937,7 @@
         },
         {
           "flow_id": "DDOS-1193",
-          "timestamp": 1788687542.7527053,
+          "timestamp": 1789385844.8024333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5952,7 +5952,7 @@
         },
         {
           "flow_id": "DDOS-1194",
-          "timestamp": 1788687542.7535052,
+          "timestamp": 1789385844.8032331,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5967,7 +5967,7 @@
         },
         {
           "flow_id": "DDOS-1195",
-          "timestamp": 1788687542.7542052,
+          "timestamp": 1789385844.8039331,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5982,7 +5982,7 @@
         },
         {
           "flow_id": "DDOS-1196",
-          "timestamp": 1788687542.7555053,
+          "timestamp": 1789385844.8052332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -5997,7 +5997,7 @@
         },
         {
           "flow_id": "DDOS-1197",
-          "timestamp": 1788687542.7564054,
+          "timestamp": 1789385844.8061333,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -6012,7 +6012,7 @@
         },
         {
           "flow_id": "DDOS-1198",
-          "timestamp": 1788687542.7581053,
+          "timestamp": 1789385844.8078332,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -6027,7 +6027,7 @@
         },
         {
           "flow_id": "DDOS-1199",
-          "timestamp": 1788687542.7589052,
+          "timestamp": 1789385844.808633,
           "detector": "ddos_behavior",
           "threat_class": "DDOS",
           "score": 75.0,
@@ -6041,10 +6041,10 @@
           }
         }
       ],
-      "average_latency_ms": 0.5964716666666666,
+      "average_latency_ms": 1.2251983333333334,
       "standardized_alert": {
-        "alert_id": "NETRA-BC0B2FD6DEDF",
-        "timestamp": "1788687542.7589052",
+        "alert_id": "NETRA-3454A9015AD3",
+        "timestamp": "1789385844.808633",
         "flow_id": "DDOS-1199",
         "threat_class": "DDOS",
         "severity": "HIGH",
@@ -6067,7 +6067,7 @@
       "matching_detections": [
         {
           "flow_id": "SCAN-19",
-          "timestamp": 1788687541.723219,
+          "timestamp": 1789385843.7729468,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6080,7 +6080,7 @@
         },
         {
           "flow_id": "SCAN-20",
-          "timestamp": 1788687541.736919,
+          "timestamp": 1789385843.7866468,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6093,7 +6093,7 @@
         },
         {
           "flow_id": "SCAN-21",
-          "timestamp": 1788687541.750619,
+          "timestamp": 1789385843.8003469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6106,7 +6106,7 @@
         },
         {
           "flow_id": "SCAN-22",
-          "timestamp": 1788687541.764319,
+          "timestamp": 1789385843.8140469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6119,7 +6119,7 @@
         },
         {
           "flow_id": "SCAN-23",
-          "timestamp": 1788687541.778019,
+          "timestamp": 1789385843.8277469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6132,7 +6132,7 @@
         },
         {
           "flow_id": "SCAN-24",
-          "timestamp": 1788687541.791719,
+          "timestamp": 1789385843.8414469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6145,7 +6145,7 @@
         },
         {
           "flow_id": "SCAN-25",
-          "timestamp": 1788687541.805419,
+          "timestamp": 1789385843.855147,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6158,7 +6158,7 @@
         },
         {
           "flow_id": "SCAN-26",
-          "timestamp": 1788687541.819119,
+          "timestamp": 1789385843.868847,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6171,7 +6171,7 @@
         },
         {
           "flow_id": "SCAN-27",
-          "timestamp": 1788687541.832819,
+          "timestamp": 1789385843.882547,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6184,7 +6184,7 @@
         },
         {
           "flow_id": "SCAN-28",
-          "timestamp": 1788687541.846519,
+          "timestamp": 1789385843.896247,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6197,7 +6197,7 @@
         },
         {
           "flow_id": "SCAN-29",
-          "timestamp": 1788687541.860219,
+          "timestamp": 1789385843.909947,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6211,248 +6211,8 @@
       ],
       "all_triggered_detections": [
         {
-          "flow_id": "SCAN-3",
-          "timestamp": 1788687541.504019,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 4,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-4",
-          "timestamp": 1788687541.517719,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 5,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-5",
-          "timestamp": 1788687541.531419,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 6,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-6",
-          "timestamp": 1788687541.545119,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 7,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-7",
-          "timestamp": 1788687541.558819,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 8,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-8",
-          "timestamp": 1788687541.572519,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 9,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-9",
-          "timestamp": 1788687541.586219,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 10,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-10",
-          "timestamp": 1788687541.599919,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 11,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-11",
-          "timestamp": 1788687541.613619,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 12,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-12",
-          "timestamp": 1788687541.627319,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 13,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-13",
-          "timestamp": 1788687541.641019,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 14,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-14",
-          "timestamp": 1788687541.654719,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 15,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-15",
-          "timestamp": 1788687541.668419,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 16,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-16",
-          "timestamp": 1788687541.682119,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 17,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-17",
-          "timestamp": 1788687541.695819,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 18,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
-          "flow_id": "SCAN-18",
-          "timestamp": 1788687541.709519,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 19,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-19",
-          "timestamp": 1788687541.723219,
+          "timestamp": 1789385843.7729468,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6464,23 +6224,8 @@
           }
         },
         {
-          "flow_id": "SCAN-19",
-          "timestamp": 1788687541.723219,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 20,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-20",
-          "timestamp": 1788687541.736919,
+          "timestamp": 1789385843.7866468,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6492,23 +6237,8 @@
           }
         },
         {
-          "flow_id": "SCAN-20",
-          "timestamp": 1788687541.736919,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 21,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-21",
-          "timestamp": 1788687541.750619,
+          "timestamp": 1789385843.8003469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6520,23 +6250,8 @@
           }
         },
         {
-          "flow_id": "SCAN-21",
-          "timestamp": 1788687541.750619,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 22,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-22",
-          "timestamp": 1788687541.764319,
+          "timestamp": 1789385843.8140469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6548,23 +6263,8 @@
           }
         },
         {
-          "flow_id": "SCAN-22",
-          "timestamp": 1788687541.764319,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 23,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-23",
-          "timestamp": 1788687541.778019,
+          "timestamp": 1789385843.8277469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6576,23 +6276,8 @@
           }
         },
         {
-          "flow_id": "SCAN-23",
-          "timestamp": 1788687541.778019,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 24,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-24",
-          "timestamp": 1788687541.791719,
+          "timestamp": 1789385843.8414469,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6604,23 +6289,8 @@
           }
         },
         {
-          "flow_id": "SCAN-24",
-          "timestamp": 1788687541.791719,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 25,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-25",
-          "timestamp": 1788687541.805419,
+          "timestamp": 1789385843.855147,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6632,23 +6302,8 @@
           }
         },
         {
-          "flow_id": "SCAN-25",
-          "timestamp": 1788687541.805419,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 26,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-26",
-          "timestamp": 1788687541.819119,
+          "timestamp": 1789385843.868847,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6660,23 +6315,8 @@
           }
         },
         {
-          "flow_id": "SCAN-26",
-          "timestamp": 1788687541.819119,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 27,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-27",
-          "timestamp": 1788687541.832819,
+          "timestamp": 1789385843.882547,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6688,23 +6328,8 @@
           }
         },
         {
-          "flow_id": "SCAN-27",
-          "timestamp": 1788687541.832819,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 28,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-28",
-          "timestamp": 1788687541.846519,
+          "timestamp": 1789385843.896247,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6716,23 +6341,8 @@
           }
         },
         {
-          "flow_id": "SCAN-28",
-          "timestamp": 1788687541.846519,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 29,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
-        },
-        {
           "flow_id": "SCAN-29",
-          "timestamp": 1788687541.860219,
+          "timestamp": 1789385843.909947,
           "detector": "port_scan_fanout",
           "threat_class": "PORTSCAN",
           "score": 100.0,
@@ -6742,27 +6352,12 @@
             "unique_destination_hosts": 1,
             "source_ip": "10.30.30.30"
           }
-        },
-        {
-          "flow_id": "SCAN-29",
-          "timestamp": 1788687541.860219,
-          "detector": "c2_beacon_periodicity",
-          "threat_class": "BOT_C2",
-          "score": 100.0,
-          "evidence": {
-            "event_count": 30,
-            "destination": "10.40.40.40",
-            "mean_interarrival_seconds": 0.0137,
-            "interarrival_stddev": 0.0,
-            "periodicity_cv": 0.0,
-            "window_seconds": 10.0
-          }
         }
       ],
-      "average_latency_ms": 0.0542,
+      "average_latency_ms": 0.0575,
       "standardized_alert": {
-        "alert_id": "NETRA-9DD1898ACB20",
-        "timestamp": "1788687541.860219",
+        "alert_id": "NETRA-E0629FCBDB6B",
+        "timestamp": "1789385843.909947",
         "flow_id": "SCAN-29",
         "threat_class": "PORTSCAN",
         "severity": "HIGH",
@@ -6783,13 +6378,15 @@
       "matching_detections": [
         {
           "flow_id": "C2-3",
-          "timestamp": 1788687547.462919,
+          "timestamp": 1789385849.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 4,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6798,13 +6395,15 @@
         },
         {
           "flow_id": "C2-4",
-          "timestamp": 1788687549.462919,
+          "timestamp": 1789385851.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 5,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6813,13 +6412,15 @@
         },
         {
           "flow_id": "C2-5",
-          "timestamp": 1788687551.462919,
+          "timestamp": 1789385853.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6828,13 +6429,15 @@
         },
         {
           "flow_id": "C2-6",
-          "timestamp": 1788687553.462919,
+          "timestamp": 1789385855.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6843,13 +6446,15 @@
         },
         {
           "flow_id": "C2-7",
-          "timestamp": 1788687555.462919,
+          "timestamp": 1789385857.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6858,13 +6463,15 @@
         },
         {
           "flow_id": "C2-8",
-          "timestamp": 1788687557.462919,
+          "timestamp": 1789385859.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6873,13 +6480,15 @@
         },
         {
           "flow_id": "C2-9",
-          "timestamp": 1788687559.462919,
+          "timestamp": 1789385861.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6888,13 +6497,15 @@
         },
         {
           "flow_id": "C2-10",
-          "timestamp": 1788687561.462919,
+          "timestamp": 1789385863.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6903,13 +6514,15 @@
         },
         {
           "flow_id": "C2-11",
-          "timestamp": 1788687563.462919,
+          "timestamp": 1789385865.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6920,13 +6533,15 @@
       "all_triggered_detections": [
         {
           "flow_id": "C2-3",
-          "timestamp": 1788687547.462919,
+          "timestamp": 1789385849.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 4,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6935,13 +6550,15 @@
         },
         {
           "flow_id": "C2-4",
-          "timestamp": 1788687549.462919,
+          "timestamp": 1789385851.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 5,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6950,13 +6567,15 @@
         },
         {
           "flow_id": "C2-5",
-          "timestamp": 1788687551.462919,
+          "timestamp": 1789385853.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6965,13 +6584,15 @@
         },
         {
           "flow_id": "C2-6",
-          "timestamp": 1788687553.462919,
+          "timestamp": 1789385855.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6980,13 +6601,15 @@
         },
         {
           "flow_id": "C2-7",
-          "timestamp": 1788687555.462919,
+          "timestamp": 1789385857.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -6995,13 +6618,15 @@
         },
         {
           "flow_id": "C2-8",
-          "timestamp": 1788687557.462919,
+          "timestamp": 1789385859.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -7010,13 +6635,15 @@
         },
         {
           "flow_id": "C2-9",
-          "timestamp": 1788687559.462919,
+          "timestamp": 1789385861.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -7025,13 +6652,15 @@
         },
         {
           "flow_id": "C2-10",
-          "timestamp": 1788687561.462919,
+          "timestamp": 1789385863.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -7040,13 +6669,15 @@
         },
         {
           "flow_id": "C2-11",
-          "timestamp": 1788687563.462919,
+          "timestamp": 1789385865.512647,
           "detector": "c2_beacon_periodicity",
           "threat_class": "BOT_C2",
           "score": 100.0,
           "evidence": {
             "event_count": 6,
             "destination": "10.60.60.60",
+            "destination_port": 443,
+            "protocol": "tcp",
             "mean_interarrival_seconds": 2.0,
             "interarrival_stddev": 0.0,
             "periodicity_cv": 0.0,
@@ -7054,10 +6685,10 @@
           }
         }
       ],
-      "average_latency_ms": 0.03791666666666667,
+      "average_latency_ms": 0.06991666666666667,
       "standardized_alert": {
-        "alert_id": "NETRA-94D8676F3C3A",
-        "timestamp": "1788687563.462919",
+        "alert_id": "NETRA-877F7A652000",
+        "timestamp": "1789385865.512647",
         "flow_id": "C2-11",
         "threat_class": "BOT_C2",
         "severity": "HIGH",
@@ -7065,6 +6696,8 @@
         "supporting_evidence": {
           "event_count": 6,
           "destination": "10.60.60.60",
+          "destination_port": 443,
+          "protocol": "tcp",
           "mean_interarrival_seconds": 2.0,
           "interarrival_stddev": 0.0,
           "periodicity_cv": 0.0,
@@ -7080,7 +6713,7 @@
       "matching_detections": [
         {
           "flow_id": "EXFIL-0",
-          "timestamp": 1788687541.462919,
+          "timestamp": 1789385843.512647,
           "detector": "exfiltration_asymmetry",
           "threat_class": "EXFILTRATION",
           "score": 76.0,
@@ -7095,7 +6728,7 @@
       "all_triggered_detections": [
         {
           "flow_id": "EXFIL-0",
-          "timestamp": 1788687541.462919,
+          "timestamp": 1789385843.512647,
           "detector": "exfiltration_asymmetry",
           "threat_class": "EXFILTRATION",
           "score": 76.0,
@@ -7107,10 +6740,10 @@
           }
         }
       ],
-      "average_latency_ms": 0.067,
+      "average_latency_ms": 0.061,
       "standardized_alert": {
-        "alert_id": "NETRA-43F9AA91EFF3",
-        "timestamp": "1788687541.462919",
+        "alert_id": "NETRA-CC1CFF300F97",
+        "timestamp": "1789385843.512647",
         "flow_id": "EXFIL-0",
         "threat_class": "EXFILTRATION",
         "severity": "HIGH",
@@ -7127,10 +6760,10 @@
   ],
   "throughput_benchmark": {
     "flows_processed": 10000,
-    "total_time_seconds": 96.34642620500006,
-    "throughput_flows_per_second": 103.79212176196977,
-    "average_latency_ms": 9.622967403999757,
-    "p95_latency_ms": 19.780231000027015,
+    "total_time_seconds": 205.4570650999999,
+    "throughput_flows_per_second": 48.67196947027744,
+    "average_latency_ms": 20.52806590460043,
+    "p95_latency_ms": 43.06431600002725,
     "dropped_flows": 0,
     "window_seconds": 10.0
   },
@@ -7138,28 +6771,28 @@
     {
       "name": "TLS REGRESSION TESTS",
       "command": [
-        "/home/kusumitha/Projects/NETRA/venv/bin/python3",
+        "/home/kusumitha/Projects/NETRA/backend/.venv/bin/python",
         "-m",
         "pytest",
         "-q",
         "training/test_tls_detector.py"
       ],
       "return_code": 0,
-      "started_utc": "2026-09-06T09:40:38.549615+00:00",
-      "finished_utc": "2026-09-06T09:40:39.209668+00:00",
+      "started_utc": "2026-09-14T11:40:50.484468+00:00",
+      "finished_utc": "2026-09-14T11:40:51.364300+00:00",
       "passed": true,
-      "stdout": "..                                                                       [100%]\n2 passed in 0.03s\n",
+      "stdout": "..                                                                       [100%]\n2 passed in 0.04s\n",
       "stderr": ""
     },
     {
       "name": "REAL CIC-IDS2017 FLOW TEST",
       "command": [
-        "/home/kusumitha/Projects/NETRA/venv/bin/python3",
+        "/home/kusumitha/Projects/NETRA/backend/.venv/bin/python",
         "training/test_real_flows.py"
       ],
       "return_code": 0,
-      "started_utc": "2026-09-06T09:40:39.210044+00:00",
-      "finished_utc": "2026-09-06T09:40:43.073823+00:00",
+      "started_utc": "2026-09-14T11:40:51.364659+00:00",
+      "finished_utc": "2026-09-14T11:40:56.137861+00:00",
       "passed": true,
       "stdout": "\nNETRA REAL CIC-IDS2017 FLOW TEST\n======================================================================\n\nExpected:   BENIGN\nPredicted:  BENIGN\nConfidence: 100.0%\nResult:     CORRECT\n\nExpected:   DDOS\nPredicted:  DDOS\nConfidence: 100.0%\nResult:     CORRECT\n\nExpected:   PORTSCAN\nPredicted:  PORTSCAN\nConfidence: 99.96%\nResult:     CORRECT\n\nExpected:   DOS\nPredicted:  DOS\nConfidence: 100.0%\nResult:     CORRECT\n\n======================================================================\n",
       "stderr": ""
@@ -7167,40 +6800,40 @@
     {
       "name": "DNS MODEL EVALUATION",
       "command": [
-        "/home/kusumitha/Projects/NETRA/venv/bin/python3",
+        "/home/kusumitha/Projects/NETRA/backend/.venv/bin/python",
         "training/test_dns_model.py"
       ],
       "return_code": 0,
-      "started_utc": "2026-09-06T09:40:43.074603+00:00",
-      "finished_utc": "2026-09-06T09:41:29.677990+00:00",
+      "started_utc": "2026-09-14T11:40:56.138053+00:00",
+      "finished_utc": "2026-09-14T11:42:54.511233+00:00",
       "passed": true,
-      "stdout": "Loading DNS model...\nLoading official test set...\nTest rows: 620703\nTest distribution:\n0    236072\n1    383072\n2      1559\nName: count, dtype: int64\n\n================================================================================\nDNS MODEL EVALUATION\n================================================================================\n              precision    recall  f1-score   support\n\n      BENIGN     0.7820    0.7107    0.7446    236072\n         DGA     0.8287    0.8489    0.8387    383072\n  DNS_TUNNEL     0.0846    0.7441    0.1520      1559\n\n    accuracy                         0.7961    620703\n   macro avg     0.5651    0.7679    0.5784    620703\nweighted avg     0.8091    0.7961    0.8012    620703\n\nConfusion matrix:\n[[167779  66829   1464]\n [ 46782 325208  11082]\n [     1    398   1160]]\n================================================================================\nMacro F1:              0.5784\nWeighted F1:           0.8012\nMacro precision:       0.5651\nMacro recall:          0.7679\nDNS tunnel precision:  0.0846\nDNS tunnel recall:     0.7441\nDNS tunnel F1:         0.1520\nMean confidence:       0.7218\nEvaluation throughput: 14635.25 domains/sec\nEvaluation time:       42.41 sec\n\nSaved: /home/kusumitha/Projects/NETRA/models/netra_dns_evaluation.json\n",
+      "stdout": "Loading DNS model...\nLoading official test set...\nTest rows: 620703\nTest distribution:\n0    236072\n1    383072\n2      1559\nName: count, dtype: int64\n\n================================================================================\nDNS MODEL EVALUATION\n================================================================================\n              precision    recall  f1-score   support\n\n      BENIGN     0.7820    0.7107    0.7446    236072\n         DGA     0.8287    0.8489    0.8387    383072\n  DNS_TUNNEL     0.0846    0.7441    0.1520      1559\n\n    accuracy                         0.7961    620703\n   macro avg     0.5651    0.7679    0.5784    620703\nweighted avg     0.8091    0.7961    0.8012    620703\n\nConfusion matrix:\n[[167779  66829   1464]\n [ 46782 325208  11082]\n [     1    398   1160]]\n================================================================================\nMacro F1:              0.5784\nWeighted F1:           0.8012\nMacro precision:       0.5651\nMacro recall:          0.7679\nDNS tunnel precision:  0.0846\nDNS tunnel recall:     0.7441\nDNS tunnel F1:         0.1520\nMean confidence:       0.7218\nEvaluation throughput: 5662.34 domains/sec\nEvaluation time:       109.62 sec\n\nSaved: /home/kusumitha/Projects/NETRA/models/netra_dns_evaluation.json\n",
       "stderr": ""
     },
     {
       "name": "DNS BEHAVIORAL BENCHMARK",
       "command": [
-        "/home/kusumitha/Projects/NETRA/venv/bin/python3",
+        "/home/kusumitha/Projects/NETRA/backend/.venv/bin/python",
         "training/evaluate_dns_behavior.py"
       ],
       "return_code": 0,
-      "started_utc": "2026-09-06T09:41:29.678922+00:00",
-      "finished_utc": "2026-09-06T09:41:36.200715+00:00",
+      "started_utc": "2026-09-14T11:42:54.511423+00:00",
+      "finished_utc": "2026-09-14T11:43:11.563185+00:00",
       "passed": true,
-      "stdout": "========================================================================\nNETRA DNS BEHAVIORAL BENCHMARK\n========================================================================\n\nLoading independent test set...\nTotal rows: 620703\nAfter deduplication: 620696\n\nBenchmark samples:\nBENIGN: 10000\nDGA:    10000\nTUNNEL: 1552\n\n========================================================================\nBENIGN \u2014 FALSE POSITIVE TEST\n========================================================================\nSimulated sources: 100\nTriggered sources: 0\nAlert rate:       0.00%\nMaximum score:    42.69\n\n========================================================================\nDGA \u2014 FALSE POSITIVE TEST\n========================================================================\nSimulated sources: 100\nTriggered sources: 0\nAlert rate:       0.00%\nMaximum score:    55.34\n\n========================================================================\nDNS TUNNEL \u2014 DETECTION TEST\n========================================================================\nSimulated sources: 16\nTriggered sources: 16\nAlert rate:       100.00%\nMaximum score:    100.00\nAverage detection query: 8.06\n\n========================================================================\nOVERALL BEHAVIORAL RESULTS\n========================================================================\nDNS tunnel source recall: 100.00%\nNegative-source false-positive rate: 0.00%\nTotal benchmark time: 4.85 sec\n\nInterpretation:\nThis is a simulated stream benchmark because the source dataset contains domains/classes but no timestamps or source IPs.\n",
+      "stdout": "========================================================================\nNETRA DNS BEHAVIORAL BENCHMARK\n========================================================================\n\nLoading independent test set...\nTotal rows: 620703\nAfter deduplication: 620696\n\nBenchmark samples:\nBENIGN: 10000\nDGA:    10000\nTUNNEL: 1552\n\n========================================================================\nBENIGN \u2014 FALSE POSITIVE TEST\n========================================================================\nSimulated sources: 100\nTriggered sources: 0\nAlert rate:       0.00%\nMaximum score:    42.69\n\n========================================================================\nDGA \u2014 FALSE POSITIVE TEST\n========================================================================\nSimulated sources: 100\nTriggered sources: 0\nAlert rate:       0.00%\nMaximum score:    55.34\n\n========================================================================\nDNS TUNNEL \u2014 DETECTION TEST\n========================================================================\nSimulated sources: 16\nTriggered sources: 16\nAlert rate:       100.00%\nMaximum score:    100.00\nAverage detection query: 8.06\n\n========================================================================\nOVERALL BEHAVIORAL RESULTS\n========================================================================\nDNS tunnel source recall: 100.00%\nNegative-source false-positive rate: 0.00%\nTotal benchmark time: 13.45 sec\n\nInterpretation:\nThis is a simulated stream benchmark because the source dataset contains domains/classes but no timestamps or source IPs.\n",
       "stderr": ""
     },
     {
       "name": "END-TO-END STREAMING TEST",
       "command": [
-        "/home/kusumitha/Projects/NETRA/venv/bin/python3",
+        "/home/kusumitha/Projects/NETRA/backend/.venv/bin/python",
         "training/test_stream.py"
       ],
       "return_code": 0,
-      "started_utc": "2026-09-06T09:41:36.201609+00:00",
-      "finished_utc": "2026-09-06T09:41:50.033184+00:00",
+      "started_utc": "2026-09-14T11:43:11.563421+00:00",
+      "finished_utc": "2026-09-14T11:43:37.212007+00:00",
       "passed": true,
-      "stdout": "Loading dataset for streaming...\nStreaming 100 flows...\n======================================================================\n\nNETRA STREAMING TEST\n======================================================================\nTotal flows processed: 100\nThreat alerts generated: 75\nTotal time: 12.019 seconds\nThroughput: 8.32 flows/second\n\nFIRST 10 FLOW RESULTS\n======================================================================\n\nFlow #1\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 100.0%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 154.735 ms\n\nFlow #2\nExpected: BENIGN\nPredicted: BENIGN\nConfidence: 100.0%\nAlert generated: False\nProcessing time: 90.765 ms\n\nFlow #3\nExpected: DDOS\nPredicted: DDOS\nConfidence: 100.0%\nAlert generated: True\nSeverity: CRITICAL\nProcessing time: 106.938 ms\n\nFlow #4\nExpected: BENIGN\nPredicted: BENIGN\nConfidence: 100.0%\nAlert generated: False\nProcessing time: 115.709 ms\n\nFlow #5\nExpected: DOS\nPredicted: DOS\nConfidence: 100.0%\nAlert generated: True\nSeverity: CRITICAL\nProcessing time: 108.857 ms\n\nFlow #6\nExpected: DOS\nPredicted: DOS\nConfidence: 99.12%\nAlert generated: True\nSeverity: CRITICAL\nProcessing time: 92.339 ms\n\nFlow #7\nExpected: BENIGN\nPredicted: BENIGN\nConfidence: 100.0%\nAlert generated: False\nProcessing time: 91.986 ms\n\nFlow #8\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 100.0%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 110.406 ms\n\nFlow #9\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 99.97%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 108.225 ms\n\nFlow #10\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 99.98%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 106.656 ms\n\n======================================================================\n",
+      "stdout": "Loading dataset for streaming...\nStreaming 100 flows...\n======================================================================\n\nNETRA STREAMING TEST\n======================================================================\nTotal flows processed: 100\nThreat alerts generated: 75\nTotal time: 21.898 seconds\nThroughput: 4.57 flows/second\n\nFIRST 10 FLOW RESULTS\n======================================================================\n\nFlow #1\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 100.0%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 283.256 ms\n\nFlow #2\nExpected: BENIGN\nPredicted: BENIGN\nConfidence: 100.0%\nAlert generated: False\nProcessing time: 211.934 ms\n\nFlow #3\nExpected: DDOS\nPredicted: DDOS\nConfidence: 100.0%\nAlert generated: True\nSeverity: CRITICAL\nProcessing time: 249.553 ms\n\nFlow #4\nExpected: BENIGN\nPredicted: BENIGN\nConfidence: 100.0%\nAlert generated: False\nProcessing time: 220.266 ms\n\nFlow #5\nExpected: DOS\nPredicted: DOS\nConfidence: 100.0%\nAlert generated: True\nSeverity: CRITICAL\nProcessing time: 217.285 ms\n\nFlow #6\nExpected: DOS\nPredicted: DOS\nConfidence: 99.12%\nAlert generated: True\nSeverity: CRITICAL\nProcessing time: 223.201 ms\n\nFlow #7\nExpected: BENIGN\nPredicted: BENIGN\nConfidence: 100.0%\nAlert generated: False\nProcessing time: 216.959 ms\n\nFlow #8\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 100.0%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 202.803 ms\n\nFlow #9\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 99.97%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 213.486 ms\n\nFlow #10\nExpected: PORTSCAN\nPredicted: PORTSCAN\nConfidence: 99.98%\nAlert generated: True\nSeverity: HIGH\nProcessing time: 229.11 ms\n\n======================================================================\n",
       "stderr": ""
     }
   ],

@@ -1,0 +1,65 @@
+{
+  "project": "NETRA",
+  "validation": "FINAL",
+  "generated_utc": "2026-09-14T11:44:10Z",
+  "passed": 11,
+  "total": 11,
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Required model/document artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Python backend compilation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Random Forest model loading + inference",
+      "passed": true,
+      "detail": "{\"threat_class\":\"BENIGN\",\"confidence\":59.32}"
+    },
+    {
+      "name": "Existing SIH validation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "NETRA pytest suite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Saved SIH validation artifact integrity",
+      "passed": true,
+      "detail": "4/4 behavioral cases passed"
+    },
+    {
+      "name": "Passive/read-only active-probing audit",
+      "passed": true,
+      "detail": "no active probing APIs detected"
+    },
+    {
+      "name": "TLS/QUIC metadata-only implementation audit",
+      "passed": true,
+      "detail": "payload_decryption=False evidence present"
+    },
+    {
+      "name": "Backend health endpoint",
+      "passed": true,
+      "detail": "http://127.0.0.1:8000/health"
+    },
+    {
+      "name": "Required OpenAPI routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frontend production build",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

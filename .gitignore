@@ -32,3 +32,17 @@ datasets/processed/*.zip
 # OS/editor
 .DS_Store
 .vscode/
+
+/data/live_zeek/
+frontend/0
+**/*.before_*
+**/*.backup
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+**/*backup*

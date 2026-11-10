@@ -53,6 +53,7 @@ function TrafficArchitecturePage({
   replaying,
 }) {
   const [currentIndex, setCurrentIndex] = useState(-1);
+  const [hoveredStream, setHoveredStream] = useState(null);
 
   const total = Array.isArray(flowResults)
     ? flowResults.length
@@ -1185,8 +1186,44 @@ function TrafficArchitecturePage({
                   ? 10
                   : 5;
 
+              const streamNames = {
+                blue: "NORMAL TRAFFIC",
+                green: "LEGITIMATE FLOW",
+                yellow: "SUSPICIOUS BEHAVIOR",
+                red: "DETECTED THREAT FLOW",
+              };
+
+              const streamDescriptions = {
+                blue: "Normal observed network traffic",
+                green: "Legitimate flow identified during replay",
+                yellow: "Traffic showing suspicious behavior",
+                red: "Threat-associated traffic detected by NETRA",
+              };
+
               return (
                 <g key={index}>
+                  <path
+                    d={path}
+                    fill="none"
+                    stroke="transparent"
+                    strokeWidth={24}
+                    style={{ cursor: "pointer" }}
+                    onMouseEnter={() =>
+                      setHoveredStream({
+                        name:
+                          streamNames[stream.color] ||
+                          "NETWORK TRAFFIC",
+                        description:
+                          streamDescriptions[stream.color] ||
+                          "Observed network traffic",
+                        color: stream.color,
+                      })
+                    }
+                    onMouseLeave={() =>
+                      setHoveredStream(null)
+                    }
+                  />
+
                   <path
                     d={path}
                     className={`stream-glow ${stream.color}`}
@@ -1245,7 +1282,20 @@ function TrafficArchitecturePage({
                           : 3);
 
                       return (
-                        <g key={threatIndex}>
+                        <g
+                          key={threatIndex}
+                          className="nfw-threat-hover"
+                        >
+                          <title>
+                            {currentFlow?.predicted_class
+                              ? `Detected Threat Flow — ${labelFor(
+                                  currentFlow.predicted_class
+                                )}`
+                              : mode === "flood"
+                              ? "Anomalous Threat Flow — DDoS / Flood Pattern"
+                              : "Detected Threat Flow"}
+                          </title>
+
                           <circle
                             cx={x}
                             cy={y}
@@ -1267,6 +1317,24 @@ function TrafficArchitecturePage({
             })}
           </svg>
         </div>
+
+        {hoveredStream && (
+          <div className="nfw-stream-hover-tooltip">
+            <div
+              className={`nfw-stream-hover-dot ${hoveredStream.color}`}
+            />
+
+            <div>
+              <div className="nfw-stream-hover-name">
+                {hoveredStream.name}
+              </div>
+
+              <div className="nfw-stream-hover-description">
+                {hoveredStream.description}
+              </div>
+            </div>
+          </div>
+        )}
 
         {(currentFlow?.alert_generated ||
           mode === "flood") && (

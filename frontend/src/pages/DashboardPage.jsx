@@ -25,7 +25,7 @@ function DashboardPage({
       <PageHeader
         eyebrow="SECURITY OPERATIONS CENTER"
         title="Threat Intelligence Dashboard"
-        description="Real-time visibility across the NETRA network threat detection engine."
+        description="Replay-based visibility across the NETRA network threat detection engine."
         action={
           <button
             className="primary-button"
@@ -79,6 +79,11 @@ function DashboardPage({
         />
       </section>
 
+      <div className="dashboard-note">
+        <span>DISPLAY WINDOW: 100 FLOWS</span>
+        <span>ENGINE BENCHMARK: 10,000 FLOWS</span>
+      </div>
+
       <section className="dashboard-grid">
         <Panel title="Traffic Distribution" subtitle="BENIGN VS THREAT" wide>
           <div className="traffic-layout">
@@ -129,9 +134,13 @@ function DashboardPage({
           )}
         </Panel>
 
+        <Panel title="SIH Threat Coverage" subtitle="REQUIRED THREAT CLASSES">
+          <ThreatCoverage />
+        </Panel>
+
         <Panel
-          title="Live Threats"
-          subtitle="LATEST SECURITY EVENTS"
+          title="Latest Threats"
+          subtitle="LATEST REPLAY SECURITY EVENTS"
           action={`${alerts.length} ALERTS`}
         >
           <AlertList alerts={alerts} />
@@ -372,9 +381,14 @@ function Performance({ analytics }) {
         </div>
 
         <div className="performance-copy">
-          <span>CURRENT THROUGHPUT</span>
+          <span>REPLAY THROUGHPUT</span>
           <h3>{speed} flows/sec</h3>
-          <p>Current NETRA inference replay baseline.</p>
+          <p>End-to-end replay rate.</p>
+          <div className="performance-status">
+            <i />
+            TESTED ENGINE BENCHMARK&nbsp; 103.79 FLOWS/SEC
+          </div>
+          <p className="performance-note">10,000-flow streaming benchmark.</p>
 
           <div className="performance-status">
             <i />
@@ -386,8 +400,8 @@ function Performance({ analytics }) {
       <div className="performance-stats">
         <Metric icon={Gauge} label="PROCESSING TIME" value={`${time} sec`} />
         <Metric icon={Network} label="FLOWS ANALYZED" value={analytics?.total_flows ?? 0} />
-        <Metric icon={Database} label="DATA SOURCE" value="CIC-IDS2017" />
-        <Metric icon={Target} label="DETECTION MODE" value="PASSIVE" />
+        <Metric icon={Database} label="DATA SOURCE" value="CIC-IDS2017-DERIVED" />
+        <Metric icon={Target} label="MONITORING MODE" value="PASSIVE / READ-ONLY" />
       </div>
     </div>
   );
@@ -586,6 +600,203 @@ function Matrix({ analytics, threatTypes }) {
   );
 }
 
+function evidenceValue(evidence, keys) {
+  for (const key of keys) {
+    const value = evidence?.[key];
+    if (value !== undefined && value !== null && value !== "") {
+      return value;
+    }
+  }
+  return null;
+}
+
+function formatEvidenceNumber(value) {
+  const number = Number(value);
+  return Number.isFinite(number)
+    ? Number(number.toFixed(2))
+    : value;
+}
+
+function summarizeEvidence(alert) {
+  const evidence =
+    alert?.supporting_evidence ||
+    alert?.evidence ||
+    {};
+
+  const threat = String(alert?.threat_class || "").toUpperCase();
+  const parts = [];
+
+  if (threat.includes("PORTSCAN")) {
+    const ports = evidenceValue(evidence, [
+      "unique_destination_port_count",
+      "unique_dest_port_count",
+      "unique_ports",
+      "destination_port_count",
+      "port_count",
+    ]);
+
+    const hosts = evidenceValue(evidence, [
+      "unique_destination_host_count",
+      "unique_dest_host_count",
+      "unique_hosts",
+      "destination_host_count",
+      "host_count",
+    ]);
+
+    if (ports !== null) parts.push(`ports:${formatEvidenceNumber(ports)}`);
+    if (hosts !== null) parts.push(`hosts:${formatEvidenceNumber(hosts)}`);
+  }
+
+  if (threat.includes("DDOS") || threat === "DOS") {
+    const rate = evidenceValue(evidence, [
+      "packet_rate",
+      "source_rate",
+      "event_rate_per_second",
+      "flow_rate",
+    ]);
+
+    const sources = evidenceValue(evidence, [
+      "unique_source_count",
+      "source_count",
+      "unique_sources",
+    ]);
+
+    const entropy = evidenceValue(evidence, [
+      "destination_source_entropy",
+      "source_entropy",
+      "entropy",
+    ]);
+
+    if (rate !== null) parts.push(`rate:${formatEvidenceNumber(rate)}`);
+    if (sources !== null) parts.push(`sources:${formatEvidenceNumber(sources)}`);
+    if (entropy !== null) parts.push(`entropy:${formatEvidenceNumber(entropy)}`);
+  }
+
+  if (threat.includes("BOT") || threat.includes("C2")) {
+    const events = evidenceValue(evidence, [
+      "event_count",
+      "beacon_events",
+    ]);
+
+    const interval = evidenceValue(evidence, [
+      "average_interval_seconds",
+      "mean_interval_seconds",
+      "interval_seconds",
+    ]);
+
+    const cv = evidenceValue(evidence, [
+      "coefficient_of_variation",
+      "periodicity_cv",
+    ]);
+
+    if (events !== null) parts.push(`events:${formatEvidenceNumber(events)}`);
+    if (interval !== null) parts.push(`interval:${formatEvidenceNumber(interval)}s`);
+    if (cv !== null) parts.push(`cv:${formatEvidenceNumber(cv)}`);
+  }
+
+  if (threat.includes("EXFIL")) {
+    const ratio = evidenceValue(evidence, [
+      "outbound_inbound_byte_ratio",
+      "byte_ratio",
+      "ratio",
+    ]);
+
+    if (ratio !== null) parts.push(`ratio:${formatEvidenceNumber(ratio)}`);
+  }
+
+  if (!parts.length) {
+    const source = evidenceValue(evidence, [
+      "source_ip",
+      "src_ip",
+      "source",
+    ]);
+
+    const destination = evidenceValue(evidence, [
+      "destination_ip",
+      "dst_ip",
+      "destination",
+    ]);
+
+    const packets = evidenceValue(evidence, [
+      "packet_count",
+      "orig_packets",
+    ]);
+
+    const bytes = evidenceValue(evidence, [
+      "byte_rate",
+      "orig_bytes",
+      "total_bytes",
+    ]);
+
+    if (source !== null) parts.push(`src:${source}`);
+    if (destination !== null) parts.push(`dst:${destination}`);
+    if (packets !== null) parts.push(`pkts:${formatEvidenceNumber(packets)}`);
+    if (bytes !== null) parts.push(`bytes:${formatEvidenceNumber(bytes)}`);
+  }
+
+  if (!parts.length) {
+    const signals =
+      evidence?.anomaly_signals ||
+      evidence?.supporting_signals ||
+      evidence?.signals;
+
+    if (Array.isArray(signals) && signals.length) {
+      return signals.slice(0, 3).join(" • ");
+    }
+  }
+
+  return parts.length ? parts.slice(0, 3).join(" • ") : "Evidence recorded";
+}
+
+function ThreatCoverage() {
+  const items = [
+    {
+      label: "VOLUMETRIC / PROTOCOL DDOS",
+      detail: "Flow ML + behavioral detection",
+    },
+    {
+      label: "BOTNET C2 BEACONING",
+      detail: "TLS + flow periodicity detection",
+    },
+    {
+      label: "DGA / DNS TUNNELING",
+      detail: "DNS ML + behavioral detection",
+    },
+    {
+      label: "MALWARE IN ENCRYPTED SESSIONS",
+      detail: "TLS / QUIC metadata analysis",
+    },
+    {
+      label: "RECONNAISSANCE / PORT SCANNING",
+      detail: "Fan-out + flow classification",
+    },
+    {
+      label: "DATA EXFILTRATION",
+      detail: "Outbound / inbound asymmetry analysis",
+    },
+  ];
+
+  return (
+    <div className="coverage-grid">
+      {items.map((item) => (
+        <div className="coverage-item" key={item.label}>
+          <div className="coverage-status">
+            <i />
+            COVERED
+          </div>
+          <strong>{item.label}</strong>
+          <span>{item.detail}</span>
+        </div>
+      ))}
+
+      <div className="coverage-note">
+        <strong>ADDITIONAL FLOW CLASS</strong>
+        <span>BRUTE_FORCE is retained as an observed ML class and is not relabeled as an SIH threat category.</span>
+      </div>
+    </div>
+  );
+}
+
 function RecentAlerts({ alerts }) {
   if (!alerts.length) {
     return <Empty text="No detection events available" />;
@@ -601,7 +812,7 @@ function RecentAlerts({ alerts }) {
             <th>FLOW ID</th>
             <th>SEVERITY</th>
             <th>CONFIDENCE</th>
-            <th>ACTION</th>
+            <th>EVIDENCE</th>
           </tr>
         </thead>
 
@@ -628,9 +839,9 @@ function RecentAlerts({ alerts }) {
                 </span>
               </td>
               <td>
-                <button className="table-action">
-                  <Eye size={15} />
-                </button>
+                <span className="table-evidence">
+                  {summarizeEvidence(alert)}
+                </span>
               </td>
             </tr>
           ))}
