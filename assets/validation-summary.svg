@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img">
+<rect width="1200" height="300" rx="24" fill="#0b1728"/>
+<circle cx="150" cy="150" r="83" fill="none" stroke="#20364c" stroke-width="18"/>
+<circle cx="150" cy="150" r="83" fill="none" stroke="#35c9bb" stroke-width="18" stroke-linecap="round" stroke-dasharray="522 522" transform="rotate(-90 150 150)"/>
+<path d="M113 151L139 177L190 120" fill="none" stroke="#f3f7fc" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="285" y="120" fill="#f3f7fc" font-size="46" font-weight="700" font-family="Arial">11 / 11 checks passed</text>
+<text x="285" y="166" fill="#35c9bb" font-size="28" font-weight="700" font-family="Arial">VALIDATION STATUS: PASS</text>
+<text x="285" y="213" fill="#9db2c8" font-size="19" font-family="Arial">Recorded validation snapshot: 14 September 2026 UTC</text>
+<text x="285" y="247" fill="#7891aa" font-size="16" font-family="Arial">See docs/FINAL_VALIDATION.md for the check list and evidence.</text>
+</svg>

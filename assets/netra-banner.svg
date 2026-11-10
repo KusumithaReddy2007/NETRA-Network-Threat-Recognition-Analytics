@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" role="img" aria-labelledby="t d">
+<title id="t">NETRA — Network Threat Recognition and Analytics</title>
+<desc id="d">Dark navy cybersecurity banner with a glowing network mesh and NETRA title.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#102c46"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#38d6c5"/><stop offset="1" stop-color="#4b9fff"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#1caea8" stop-opacity=".32"/><stop offset="1" stop-color="#1caea8" stop-opacity="0"/></radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1600" height="440" fill="url(#bg)"/>
+<circle cx="1280" cy="220" r="310" fill="url(#glow)" filter="url(#blur)"/>
+<g stroke="#36cfc4" stroke-opacity=".42" stroke-width="2" fill="none">
+<path d="M960 70L1100 130L1250 75L1390 150L1510 90M900 210L1050 250L1190 190L1340 270L1510 210M990 360L1110 310L1260 365L1400 320L1530 380"/>
+<path d="M1100 130L1050 250L1110 310M1250 75L1190 190L1260 365M1390 150L1340 270L1400 320M960 70L900 210L990 360"/>
+</g>
+<g fill="#55e6d8">
+<circle cx="960" cy="70" r="6"/><circle cx="1100" cy="130" r="7"/><circle cx="1250" cy="75" r="6"/><circle cx="1390" cy="150" r="7"/><circle cx="1510" cy="90" r="5"/>
+<circle cx="900" cy="210" r="6"/><circle cx="1050" cy="250" r="8"/><circle cx="1190" cy="190" r="6"/><circle cx="1340" cy="270" r="8"/><circle cx="1510" cy="210" r="6"/>
+<circle cx="990" cy="360" r="6"/><circle cx="1110" cy="310" r="7"/><circle cx="1260" cy="365" r="6"/><circle cx="1400" cy="320" r="7"/><circle cx="1530" cy="380" r="5"/>
+</g>
+<g transform="translate(112 112)">
+<path d="M54 0L104 18V68C104 111 76 141 54 153C32 141 4 111 4 68V18Z" fill="none" stroke="url(#accent)" stroke-width="7"/>
+<path d="M30 77L47 94L80 53" fill="none" stroke="#55e6d8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="250" y="190" fill="#f3f8ff" font-family="Inter,Arial,sans-serif" font-size="104" font-weight="800" letter-spacing="8">NETRA</text>
+<text x="255" y="244" fill="#55e6d8" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="4">NETWORK THREAT RECOGNITION &amp; ANALYTICS</text>
+<text x="255" y="302" fill="#c2d3e4" font-family="Inter,Arial,sans-serif" font-size="24">AI-assisted passive network threat detection</text>
+<text x="255" y="350" fill="#8ca8c1" font-family="Inter,Arial,sans-serif" font-size="18" letter-spacing="2">INTELLIGENT  •  PASSIVE  •  ANALYTICAL</text>
+</svg>

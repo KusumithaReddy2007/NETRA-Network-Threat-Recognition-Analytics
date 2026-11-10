@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img">
+<rect width="1200" height="330" rx="24" fill="#0b1728"/>
+<text x="55" y="60" fill="#f3f7fc" font-size="31" font-weight="700" font-family="Arial">Streaming throughput</text>
+<text x="55" y="94" fill="#9db2c8" font-size="18" font-family="Arial">Reported prototype measurement — flows processed per second</text>
+<rect x="55" y="145" width="1090" height="48" rx="14" fill="#1a2c42"/>
+<rect x="55" y="145" width="1128" height="48" rx="14" fill="#35c9bb"/>
+<text x="55" y="250" fill="#ffffff" font-size="54" font-weight="700" font-family="Arial">103.79</text>
+<text x="285" y="248" fill="#9db2c8" font-size="24" font-family="Arial">flows / second</text>
+<text x="1145" y="290" text-anchor="end" fill="#7891aa" font-size="14" font-family="Arial">Specific validation scenario; not a production capacity guarantee</text>
+</svg>
